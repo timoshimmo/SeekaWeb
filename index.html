@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Seeka</title>
+<link rel="styleSheet" href="css/global.css" type="text/css" media="screen" />
+<link rel="styleSheet" href="css/styles.css" type="text/css" media="screen" />
+<link href="css/selector_buttons.css" rel="stylesheet">
+
+<script type="text/javascript" src="js/jquery-1.11.3.js"></script>
+<script src="js/icheck.js"></script>
+
+<script>
+$(document).ready(function(){
+  $('input').iCheck({
+	checkboxClass: 'icheckbox_minimal',
+    radioClass: 'iradio_minimal',
+    increaseArea: '20%' // optional
+  });
+});
+</script>
+
+<script>
+$(document).ready(function(){
+  $('input').iCheck({
+    checkboxClass: 'icheckbox_minimal-blue',
+    radioClass: 'iradio_minimal-blue',
+    increaseArea: '20%' // optional
+  });
+});
+</script>
+</head>
+<body>
+<div id="globalContainer">
+	<div class="header">
+		<div class="menu_bar defwth">
+		<div class="logo">
+			<img alt="Seeka Logo" src="images/seeka.png">
+		</div>
+		
+		<div class="login">	
+			<form action="home.html" method="post" id="login_form">
+			
+				<div class="loginBody">
+					<label>Username </label><br>
+					<input type="text" name="username"> 
+					<div class="check_form">
+						<input type="checkbox" name="keep_log" value="Keep"><span>Keep me logged in</span> 
+					</div>
+				</div>
+				
+				<div class="loginBody">
+					<label>Password </label><br />
+					<input type="text" name="password"><br>
+					<a href="#" class="link_decoration">Forgotten your password?</a> <br /> 
+				</div>
+				
+				<div class="loginBody">
+					<input type="submit" value="Log In" class="btntme"> 
+				</div>
+
+			</form>
+		</div>
+		</div>
+	</div>
+	
+	<div id="container" class="defwth">
+	
+		<div id="signup_image">
+			<img alt="Seeka Mobile App" src="images/mobile.png">
+		</div>
+		
+		<div id="signup">
+			<form action="profile-edit.html" method="post" id="signup_form">
+				<h3>Sign Up</h3>
+				<p>The only advertising platform you'll ever need</p>
+				<br />
+				<label>Name </label><input type="text" name="username" class="txtdsn"> <br />
+				<label>Email </label><input type="text" name="password" class="txtdsn"> <br />
+				<label>Password </label><input type="text" name="username" class="txtdsn"> <br />
+				<label>Confirm Password </label><input type="text" name="password" class="txtdsn"> <br />
+				<div class="user_type">
+					<input type="radio" id="institutions" name="iCheck" value="institution" checked> <label for="institutions">Institution</label>
+	  				<input type="radio" id="companys" name="iCheck" value="company"> <label for="companys">Company</label>
+	  				<input type="radio" id="apps" name="iCheck" value="app"> <label for="apps">App</label>
+  				</div>
+  				<input type="submit" value="Sign Up" class="btntme">
+			</form>
+		</div>
+		
+	</div>
+	
+	<div class="footer defwth">
+		<div class="footer_links"> 
+			<p><a href="#">2015 Seeka</a>-<a href="#">Cookies, Privacy and Terms</a>-<a href="#">Contact</a></p>
+		</div> 
+	</div>
+</div>
+</body>
+</html>

@@ -1,0 +1,200 @@
+@CHARSET "UTF-8";
+
+.selectionBody {
+	width: 100%;
+	border: 1px solid #b3b3b3;
+	height: 90%;
+}
+
+.budar span.ureegg-btmNote {
+	color: #7f7f7f;
+	font-size: 0.88em;
+	font-family: 'MyWebFont', Helvetica, sans-serif;
+	font-weight: bold;
+	display: block;
+	width: 90%;
+	position: absolute;
+	top: 74.3%;
+}
+
+.reminderOptions {
+	width: 80%;
+	margin-top: 0;
+	text-align: left;
+}
+
+.reminderOptions label {
+	color: #424242;
+	font-size: 1em;
+	font-family: 'MyWebFont', Helvetica, sans-serif;
+	font-weight: 300;
+	margin-top: 5%;
+	width: 18%;
+	display: inline-block;
+	text-align: right;
+	
+}
+
+.popupNotices {
+	width: 80%;
+	margin: 5% 0 1% 0;
+}
+
+#filterBody p.sponsoredNotes {
+	color: #7f7f7f;
+	font-size: 0.7em;
+	font-family: 'MyWebFont', Helvetica, sans-serif;
+	font-weight: 300;
+	margin-left: 0px;
+}
+
+
+.half_content .reminderOptions .iradio_minimal-blue  {
+	margin-left: 0;
+	margin-top: 1%;
+}
+
+
+
+#filterBody .popupNotices span.reminderPopups {
+	color: #424242;
+	font-size: 0.98em;
+	font-family: 'MyWebFont', Helvetica, sans-serif;
+	font-weight: 300;
+	margin-bottom: 3%;
+	display: inline-block;
+}
+
+.eeggBottomContents .pick_color {
+	height: 120px;
+	width: 120px;
+	display: block;
+	position: relative;
+	top: 0;
+	left: 0;
+	margin: 5px auto 0;
+}
+
+.eeggBottomContents .fpick_color {
+	height: 120px;
+	width: 120px;
+	display: block;
+	position: relative;
+	top: 0;
+	left: 0;
+	margin: 5px auto 0;
+}
+
+
+.eeggBottomContents {
+	height: 190px;
+	width: 100%;
+	margin-bottom: 10px;
+
+}
+
+.eeggBottomContents .upWrapper {
+	-moz-border-radius:2px;
+	-webkit-border-radius:2px;
+	-o-border-radius:2px;
+	border-radius:2px;
+	border: 1px solid #b3b3b3;
+	height: 100%;
+	width: 100%;
+	margin-bottom: 0px;
+	display: block;
+}
+
+.totalUnlocked {
+	width: 125%;
+	height: 50px;
+	margin-top: 5%;
+	margin-left: -25%;
+}
+
+.totalUnlockedText {
+	width: 55%;
+	margin: auto 0;
+	float: left;
+	top: 50%;
+	transform: translate(0, -50%);
+	-webkit-transform: translate(0, -50%);
+	-moz-transform: translate(0, -50%);
+	-o-transform: translate(0, -50%);
+	position: relative;
+}
+
+#filterBody .totalUnlockedText span {
+	color: #424242;
+	font-size: 1.17em;
+	font-family: 'MyWebFont', Helvetica, sans-serif;
+	font-weight: bold;
+	display: block;
+}
+
+.totalCountCost {
+	width: 40%;
+	float: right;
+	margin: auto 0;
+	top: 50%;
+	transform: translate(0, -50%);
+	-webkit-transform: translate(0, -50%);
+	-moz-transform: translate(0, -50%);
+	-o-transform: translate(0, -50%);
+	position: relative;
+}
+
+.totalCount {
+	width: 48%;
+	float: left;
+	margin: auto 0;
+	text-align: center;
+	border-left: 1px solid #d9d9d9;
+	border-right: 1px solid #d9d9d9;
+}
+
+.totalCost {
+	width: 48%;
+	float: left;
+	text-align: center;
+	border-right: 1px solid #d9d9d9;
+}
+
+#filterBody .totalCount span.totalCountValue {
+	color: #2bb39f;
+	font-size: 0.9em;
+	font-family: 'MyWebFont', Helvetica, sans-serif;
+	font-weight: bold;
+	display: block;
+}
+
+#filterBody .totalCost span.totalCostValue {
+	color: #f8ae41;
+	font-size: 0.95em;
+	font-family: 'MyWebFont', Helvetica, sans-serif;
+	font-weight: bold;
+	display: block;
+}
+
+#filterBody .totalCountCost .totalText {
+	color: #7f7f7f;
+	font-size: 0.6em;
+	font-family: 'MyWebFont', Helvetica, sans-serif;
+	display: block;
+}
+
+
+#filterBody .selectionContent input[type="text"] {
+	background: #ecedef;
+	font-size: 0.75em;
+	font-family: 'MyWebFont', Helvetica, sans-serif;
+	font-weight: 300;
+	border: 1px solid #5dbde5;
+	padding-left: 10px;
+	width: 65%;
+	height: 20px;
+	margin: 0 auto 7px;
+	color: #969595;
+	display: block;
+	border-radius: 1px;
+}

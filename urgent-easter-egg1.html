@@ -1,0 +1,502 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Seeka</title>
+<link rel="styleSheet" href="css/global.css" type="text/css" media="screen" />
+<link rel="styleSheet" href="css/preview.css" type="text/css" media="screen" />
+<link rel="styleSheet" href="css/video-image.css" type="text/css" media="screen" />
+<link rel="styleSheet" href="css/homepages.css" type="text/css" media="screen" />
+<link rel="styleSheet" href="css/general.css" type="text/css" media="screen" />
+<link rel="styleSheet" href="css/easter-egg.css" type="text/css" media="screen" />
+<link rel="styleSheet" href="css/utility.css" type="text/css" media="screen" />
+<link rel="stylesheet" href="css/eeggcheck.css" type="text/css">
+
+<script type="text/javascript" src="js/jquery-1.11.3.js"></script>
+<script type="text/javascript" src="js/jquery-ui-1.11.4/jquery-ui.js"></script>
+<script src="js/icheck.js"></script>
+
+<link href="js/jquery-ui-1.11.4/jquery-ui.css" rel="stylesheet" type="text/css"/>
+<link href="js/jquery-ui-1.11.4/jquery-ui.theme.css" rel="stylesheet" type="text/css"/>
+<link rel="styleSheet" href="colorpicker/jquery.colorpicker.css" type="text/css" media="screen" />
+
+<script type="text/javascript" src="colorpicker/jquery.colorpicker.js"></script>
+
+<script src="craftpip-jquery-confirm/dist/jquery-confirm.min.js"></script>
+<link href="craftpip-jquery-confirm/dist/jquery-confirm.min.css" rel="stylesheet" type="text/css"/>
+
+<script type="text/javascript" charset="utf-8">
+$(document).ready(function(){	
+	$('input').iCheck({
+	checkboxClass: 'icheckbox_minimal',
+    radioClass: 'iradio_minimal',
+    increaseArea: '20%' // optional
+  });
+});
+</script>
+
+<script type="text/javascript" charset="utf-8">
+$(document).ready(function(){
+	$('input').iCheck({
+    checkboxClass: 'icheckbox_square-blue',
+    radioClass: 'iradio_square-blue',
+    increaseArea: '20%' // optional
+  });
+});
+</script>
+
+<script type="text/javascript">
+$(document).ready(function() {
+	
+	$("#sponsHeadingText").on("change paste keyup", function() {
+		var lengths = $(this).val().length;
+		var heading = $(this).val();
+		var length = 50-lengths;
+		
+		var defValue = "Company";
+		
+		if(lengths > 0) {
+			$('#sponsor').text(heading);
+			$('.charNumValue').text(length);
+		}
+		else {
+			$('#sponsor').text(defValue);
+			$('.charNumValue').text(length);
+		}
+		
+	});
+	
+	
+});
+
+</script>
+
+<script type="text/javascript" charset="utf-8">
+
+$(function() {
+	
+	 $('#chooser').click(function() {
+		 return false;
+	 });
+	 
+    $('#chooser').colorpicker({
+		altField: '.UlsponsoredBox',
+		altProperties: 'background-color',
+		altAlpha: true,
+		alpha: true,
+		parts: 'full',
+		draggabble: true,
+		inline: false,
+		color: '#f1592a',
+		colorFormat: 'RGB'
+		
+		//color value is gotten by
+		
+		/***
+		ok: function(event, color) {
+			alert(color.formatted);
+		}
+    
+    vlaue is gooten after clicking the ok button
+		**/
+		
+	});
+    
+    $('#fchooser').click(function() {
+		 return false;
+	 });
+	
+	 $('#fchooser').colorpicker({
+		 	altField: '.sponsBoxText span',
+			altProperties: 'color',
+			altAlpha: true,
+			alpha: true,
+			parts: 'full',
+			draggabble: true,
+			inline: false,
+			color: '#ffffff',
+			colorFormat: 'RGB'
+	});
+		
+});
+    
+</script>
+
+<script type="text/javascript">
+$(document).ready(function() {
+	
+	$('#uEeggContinue').click(function() {
+		if($('#popNotice').is(':checked')) {
+			$.confirm({
+			    title: 'Reminder Pop up',
+			    content: 'You will be redirected to continue.<br /> Are you sure you want to perform this action?',
+			    columnClass: 'col-md-4 col-md-offset-4',
+			    animationBounce: 2,
+			    confirmButton: 'Yes',
+			    cancelButton: 'No',
+			    confirm: function(){
+			    	var host = window.location.host;
+			    	var link = window.location.pathname;
+			    	
+			    	var url = host+"/Seeka/urgent-easter-egg3.html";
+			    	window.location.href= "http://"+url;
+			    },
+			    cancel: function(){
+			       
+			    }
+			});
+		}
+		else {
+			$.confirm({
+			    title: 'Confirm to Publish Ad',
+			    content: 'Are you sure you want to perform this action?',
+			    columnClass: 'col-md-4 col-md-offset-4',
+			    animationBounce: 2,
+			    confirmButton: 'Yes',
+			    cancelButton: 'No',
+			    confirm: function(){
+			    	var host = window.location.host;
+			    	var link = window.location.pathname;
+			    	
+			    	var url = host+"/Seeka/ad-activity.html";
+			    	window.location.href= "http://"+url;
+			    },
+			    cancel: function(){
+			       
+			    }
+			});
+		}
+		
+		return false;
+	});
+			
+});
+</script>
+
+</head>
+<body>
+<div id="Container">
+	<div class="header">
+		<div class="menu_bar">
+			<div class="logo">
+				<img alt="Seeka Logo" src="images/seeka.png">
+			</div>
+			
+			<div class="userDetails">	
+				<div class="profileImg"></div>
+				<div class="profileDetails">
+					<span>Name</span> <br>
+					<span>example@gmail.com</span><br>
+					<a href="#" class="link_decoration">My Profile</a>
+				</div>
+				
+			</div>
+		</div>
+	</div>
+	<div class="title_content">
+		<div class="backButton"><a href="packages.html"><img src="images/icon/back_button.png"></a></div>
+		<div class="billing_info">
+			<span>Ad Package</span>
+		</div>
+		
+		<div class="ad_creation">
+			<a href="budgetco.html" class="btntme">Create Ad</a>
+		</div>
+			
+	</div>
+	<div id="content">
+		<hr>
+		<div id="sidemenuBar">
+				<ul>
+				<li class="ad-activity-icon">
+					<a href="ad-activity.html">
+						<img src="images/icon/ad-activity-menu.png"><br>
+						<span>Ad Activity</span>
+					</a>
+				</li>
+				<li class="profile-icon">
+					<a href="profile-view.html">
+						<img src="images/icon/user-menu.png">
+						<span>Profile</span>
+					</a>
+				</li>
+				<li class="groups-icon">
+					<a href="groups.html">
+						<img src="images/icon/group-menu.png">
+						<span>Groups</span>
+					</a>
+				</li>
+				<li class="billing-icon">
+					<a href="billing-info-view.html">
+						<img src="images/icon/billing-menu.png">
+						<span>Billing</span>
+					</a>
+				</li>
+				<li class="settings-icon">
+					<a href="#">
+						<img src="images/icon/settings-menu.png">
+						<span>Settings</span>
+					</a>
+				</li>
+				<li class="security-icon">
+					<a href="security.html">
+						<img src="images/icon/security-menu.png">
+						<span>Security</span>
+					</a>
+				</li>
+			</ul>
+		</div>
+		<div class="formContainer">
+		<div id="formBody">
+			<form method="post" action="" id="AdForm" name="AdForm" class="adForm" autocomplete="off">
+			 	<div class="previewWrapper">
+				<div id="filterBody" class="sudar">
+					<h2 class="eeggHeader">Urgent Easter Egg</h2>
+					
+					<div class="eeggInnerBody">
+						<div class="facultyBody">
+							<h2 class="facultyHead">Select the Faculty / Course</h2>
+							
+							<div class="innerContainer">
+								
+									<select name="facCourse1" class="schara">
+										<option value="busComAc">Business &amp; Commerce &amp; Accounting</option>
+										<option value="engineering">Electical &amp; Mechanical Engineering</option>
+									</select>
+									<input type="checkbox" name="checkCourse1" value="courseOne" checked><br>
+								
+									<select name="facCourse2" class="schara">
+										<option value="headingContains">Australia</option>
+									</select> 
+									<input type="checkbox" name="checkCourse2" value="courseTwo" checked><br>
+								
+									<select name="facCourse3" class="schara">
+										<option value="headingContains">Australia</option>
+									</select>
+									<input type="checkbox" name="checkCourse3" value="courseThree" checked><br>
+								
+									<select name="facCourse4" class="schara">
+										<option value="headingContains">Australia</option>
+									</select>
+									<input type="checkbox" name="checkCourse4" value="courseFour" checked><br>
+								
+									<select name="facCourse5" class="schara">
+										<option value="headingContains">Australia</option>
+									</select>
+									<input type="checkbox" name="checkCourse5" value="courseFive" checked>
+								
+									<select name="facCourse6" class="schara">
+										<option value="headingContains">Australia</option>
+									</select>
+									<input type="checkbox" name="checkCourse5" value="courseFive" checked>
+								
+									<select name="facCourse7" class="schara">
+										<option value="headingContains">Australia</option>
+									</select>
+									<input type="checkbox" name="checkCourse5" value="courseFive" checked>
+								
+									<select name="facCourse8" class="schara">
+										<option value="headingContains">Australia</option>
+									</select>
+									<input type="checkbox" name="checkCourse5" value="courseFive" checked>
+								
+									<select name="facCourse9" class="schara">
+										<option value="headingContains">Australia</option>
+									</select>
+									<input type="checkbox" name="checkCourse5" value="courseFive" checked>
+								
+									<select name="facCourse10" class="schara">
+										<option value="headingContains">Australia</option>
+									</select>
+									<input type="checkbox" name="checkCourse5" value="courseFive" checked>
+								
+									<select name="facCourse11" class="schara">
+										<option value="headingContains">Australia</option>
+									</select>
+									<input type="checkbox" name="checkCourse5" value="courseFive" checked>
+								
+									<select name="facCourse12" class="schara">
+										<option value="headingContains">Australia</option>
+									</select>
+									<input type="checkbox" name="checkCourse5" value="courseFive" checked>
+								
+									<select name="facCourse13" class="schara">
+										<option value="headingContains">Australia</option>
+									</select>
+									<input type="checkbox" name="checkCourse5" value="courseFive" checked>
+								
+									<select name="facCourse14" class="schara">
+										<option value="headingContains">Australia</option>
+									</select>
+									<input type="checkbox" name="checkCourse5" value="courseFive" checked>
+								
+							</div>
+							
+						</div>
+						<div class="DurationBody">
+							<h2>Duration</h2>
+							
+							<div class="innerContainer">
+								<input type="text" name="dura1" value="7">
+								<input type="text" name="dura2" value="7">
+								<input type="text" name="dura3" value="7">
+								<input type="text" name="dura4" value="7">
+								<input type="text" name="dura5" value="7">
+								<input type="text" name="dura6" value="7">
+								<input type="text" name="dura7" value="7">
+								<input type="text" name="dura8" value="7">
+								<input type="text" name="dura9" value="7">
+								<input type="text" name="dura10" value="7">
+								<input type="text" name="dura11" value="7">
+								<input type="text" name="dura12" value="7">
+								<input type="text" name="dura13" value="7">
+								<input type="text" name="dura14" value="7">
+							</div>
+						</div>
+						<div class="priorityBody">
+							<h2>Priority</h2>
+							
+							<div class="innerContainer">
+								<input type="text" name="prior1">
+								<input type="text" name="prior2">
+								<input type="text" name="prior3">
+								<input type="text" name="prior4">
+								<input type="text" name="prior5">
+								<input type="text" name="prior6">
+								<input type="text" name="prior7">
+								<input type="text" name="prior8">
+								<input type="text" name="prior9">
+								<input type="text" name="prior10">
+								<input type="text" name="prior11">
+								<input type="text" name="prior12">
+								<input type="text" name="prior13">
+								<input type="text" name="prior14">
+								
+							</div>
+						</div>
+						<div class="descBody">
+							<h2>Additional Description</h2>
+							
+							<div class="innerContainer">
+								<input type="text" name="desc1">
+								<input type="text" name="desc2">
+								<input type="text" name="desc3">
+								<input type="text" name="desc4">
+								<input type="text" name="desc5">
+								<input type="text" name="desc6">
+								<input type="text" name="desc7">
+								<input type="text" name="desc8">
+								<input type="text" name="desc9">
+								<input type="text" name="desc10">
+								<input type="text" name="desc11">
+								<input type="text" name="desc12">
+								<input type="text" name="desc13">
+								<input type="text" name="desc14">
+							</div>
+						</div>
+					</div>
+					<p class="eeNotes3">* If no faculty and courses are chosen then the ads will automatically
+							be pushed on every courses offered by your university.</p>
+							
+					<div class="eeggBottom">
+						<div class="eeggBottomContent">
+							<div class="upWrapper">
+								<span> 2. Background Color</span>
+								<br>
+								<span class="topTitle">Background Color</span>
+								<a href="#" class="btntme" id="chooser">Choose Color</a>
+							</div>
+							
+						</div>
+						
+						<div class="eeggBottomContent">
+							<div class="upWrapper">
+								<span> 3. Font Color</span>
+								<br>
+								<span class="topTitle">Font Color</span>
+								<a href="#" class="btntme" id="fchooser">Choose Color</a>
+							</div>
+						</div>
+						
+						<div class="eeggBottomContent">
+							<span class="sponsNotes">* The sponsored heading will be the same as the sponsored heading
+							from the locked screen. This is to maintain the consistency of the design.</span>
+						</div>
+					</div>
+					<div class="popupNotice">
+					
+						<input type="checkbox" name="popupCheckNotice" id="popNotice" value="popupCheck">
+						<span class="reminderPopup">Use reminder pop up? (extra charges)</span>
+					
+					</div>
+					<div class="totalUnlocked">
+						
+						<div class="totalUnlockedText">
+							<span>Total Users Unlocked</span>
+						</div>
+						<div class="totalCountCost">
+							<div class="totalCount">
+								<span class="totalCountValue">2359</span>
+								<span class="totalText">COUNT</span>
+							</div>
+							<div class="totalCost">
+								<span class="totalCostValue">$ 4500</span>
+								<span class="totalText">COST</span>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="divider"></div>
+				<div id="budgetTargetBody" class="smdar">
+					
+					<div class="budgetTargetContainer">
+						<div class="adVisual">
+								<div class="adHalf avby">
+			 					<div class="adInnerBody">
+				 					<div class="adVisualTop">
+				 						<img src="images/topBar_results.png">
+				 					</div>
+				 					<div class="adVTopFilter">
+				 						<img src="images/topfilter.png">
+				 					</div>
+				 					
+				 					<div class="UlsponsoredBox">
+				 						<div class="sponsBoxText"><span>Sponsored by&nbsp;</span><span id="sponsor">Company</span></div>
+				 						<div class="sponsLogo">
+				 							<img id="sponsor-logo">
+				 						</div>
+				 					</div>
+				 					
+				 					<div class="UladSponsContents">
+				 						<img src="images/unlocked-spons-body.png" id="spons-top">
+					 						
+				 					</div>
+				 					
+				 					<div class="adSponsBottom">
+			 							<img src="images/advbottom.png">
+			 						</div>
+				 				</div>
+			 					
+			 					
+			 					</div>
+			 				</div>
+					</div>
+					</div>
+				</div>
+				
+				<div class="confirm">
+					<input type="submit" value="Continue" class="btntme" id="uEeggContinue" name="uEeggSubmit">
+				</div>
+			</form>
+		</div>
+		
+	    <div class="footer">
+			<div class="footer_links"> 
+				<p><a href="#">2015 Seeka &nbsp;</a>-&nbsp;<a href="#">Cookies, Privacy and Terms&nbsp;</a>-&nbsp;<a href="#">Contact</a></p>
+			</div> 
+	    </div>
+	</div>
+	</div>
+</div>
+</body>
+</html>

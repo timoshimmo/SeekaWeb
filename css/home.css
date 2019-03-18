@@ -1,0 +1,348 @@
+@CHARSET "UTF-8";
+
+#content {
+	width: 100%;
+	height: 900px;
+	position: relative;
+	margin: 0 auto;
+	display: block;
+}
+
+#content hr {
+	height: 1px;
+	background: #969897;
+	clear: both;
+	display: block;
+	margin: 0;
+	padding: 0;
+}
+
+#content .homeContent {
+	width: 88%;
+	height: 100%;
+	float: right;
+	background: #ecedef;
+}
+
+.homeContent .homeBody {
+	width: 95%;
+	height: 95%;
+	margin: 0 auto;
+}
+
+.homeContent #topSegment {
+	width: 100%;
+	height: 200px;
+}
+
+#topSegment h2 {
+	font-family: 'MyWebFont', Helvetica, sans-serif;
+	font-size: 1.4em;
+	font-weight: 300;
+	color: #656766;
+	margin-left: 5px;
+}
+
+.sper {
+	margin-left: 2.8%;
+}
+
+#topSegment .performance {
+	width: 22.9%;
+	height: 71.6%;
+	background: #ffffff;
+	float: left;
+	position: relative;
+}
+
+.performance .perfBody {
+	width: 170px;
+	height: 80%;
+	position: absolute;
+  	top: 50%;
+  	left: 50%;
+  	transform: translate(-50%, -50%);
+  	text-align: center;
+	
+}
+
+.inper {
+	float: left;
+	text-align: center;
+	
+}
+
+.inpers {
+	float: right;
+	text-align: center;
+	
+}
+
+.perfBody .perfImage {
+	margin-top: 12px;
+}
+
+.perfBody .perfDetails {
+	margin-top: 16%;
+
+}
+
+.perfBody .perfImage img {
+	width: 90px;
+	height: 90px;
+}
+
+.perfBody .perfDetails .perfValue {
+	font-family: 'MyWebFont', Helvetica, sans-serif;
+	font-size: 2em;
+	font-weight: 100;
+	color: #424242;
+}
+
+.perfBody .perfDetails .perfResult {
+	font-family: 'MyWebFont', Helvetica, sans-serif;
+	font-size: 0.89em;
+	font-weight: 100;
+	color: #424242;
+}
+
+.homeContent #bottomSegment {
+	width: 100%;
+	height: 560px;
+}
+
+#bottomSegment .weeklyContainer {
+	width: 60%;
+	height: 100%;
+	float: left;
+	position: relative;
+}
+
+
+#bottomSegment .notificationContainer {
+	width: 36%;
+	height: 100%;
+	float: right;
+	
+}
+
+
+#bottomSegment h2 {
+	font-family: 'MyWebFont', Helvetica, sans-serif;
+	font-size: 1.4em;
+	font-weight: 300;
+	color: #656766;
+	margin-left: 5px;
+}
+
+#bottomSegment .weeklyBody {
+	width: 100%;
+	height: 200px;
+	background: #ffffff;
+	position: relative;
+}
+
+#bottomSegment .weeklyBody .weeklyContent {
+	width: 100%;
+	height: 95%;
+	padding-top: 5px;
+
+}
+
+#topSegment .tableBody {
+	width: 100%;
+	height: 200px;
+	background: #ffffff;
+	margin-top: 30px;
+}
+
+.weeklyContainer .chartContainer {
+	width: 40%;
+	height: 100%;
+}
+
+.weeklyContent .weeklyInfo {
+	width: 45%;
+	height: 90%;
+	margin: 15px 15px 0 10px;
+	text-align: left;
+}
+
+.weeklyContent .weeklyInfo p {
+	font-family: 'MyWebFont', Helvetica, sans-serif;
+	font-size: 0.89em;
+	font-weight: 300;
+	color: #656766;
+	margin-top: 30px;
+}
+
+.weeklyContent .chartContainer img {
+	width: 100%;
+	height: 85%;
+	margin-top: 12px;
+}
+
+.weeklyContent .weeklyPercentage {
+	margin-top: 42px;
+	
+}
+
+.weeklyContent .weeklyPercentage .increasedText {
+	margin-bottom: 15px;
+	
+}
+
+.weeklyContent .weeklyPercentage .percentageValue {
+	font-family: 'MyWebFont', Helvetica, sans-serif;
+	font-size: 0.97em;
+	font-weight: 100;
+	color: #019444;
+	
+}
+
+.weeklyContent .weeklyPercentage .increasedText {
+	font-family: 'MyWebFont', Helvetica, sans-serif;
+	font-size: 0.7em;
+	font-weight: 100;
+	color: #656766;
+	
+}
+
+.notificationContainer .notificationBody {
+	width: 100%;
+	height: 80.2%;
+	background: #ffffff;
+}
+
+#bottomSegment .tableBody {
+	width: 100%;
+	height: 220px;
+	background: #ffffff;
+	margin-top: 30px;
+}
+
+table {
+    border-collapse: collapse;
+    width: 100%;
+
+}
+
+
+thead {
+    background: #424242;
+    color: white;
+  	text-align: center;
+}
+
+th, td {
+	text-align: center;
+	padding: 10px;
+	 font-family: 'MyWebFont', Helvetica, sans-serif;
+	font-size: 0.84em;
+	font-weight: 100;
+
+}
+
+
+tbody .firstTableCol {
+	color: #5dbfe6;
+}
+
+
+tbody td {
+	border-bottom: 1px solid #dfe3e4;
+
+}
+
+td:first-child, td:last-child {
+
+	border: none;
+}
+
+
+tr:last-child td{
+	border: none;
+}
+
+.notificationContainer .notificationContent {
+	height: 93%;
+	width: 97%;
+	overflow: auto;
+	top: 7%;
+	position: relative;
+	
+}
+
+.notificationContainer ul.notificationDetails {
+	list-style-type: none;
+	height: 100%;
+	width : 100%;
+	margin: 0;
+	padding: 0;
+	-webkit-margin-before: 0em;
+    -webkit-margin-after: 0em;
+    -webkit-margin-start: 0px;
+    -webkit-margin-end: 0px;
+    -webkit-padding-start: 0px;
+    position: relative;
+    display: block;
+}
+
+.notificationContainer ul li {
+	list-style-type: none;
+	height: 50px;
+	padding-top: 10px;
+	border-bottom: 1px solid #ecedef;
+}
+
+.notificationContainer ul li .notifyImage {
+	
+	width: 55px;
+	height: 50px;
+	text-align : center;
+	float: left;
+}
+
+.notificationContainer ul li .notifyImage img{
+	
+	width: 33px;
+	height: 37px;
+}
+
+
+.notificationContainer ul li .notifyInfo {
+	float: left;
+	width: 84%;
+}
+
+.notificationContainer ul li .notifyInfo a {
+	text-decoration: none;
+	display: block;
+	height: 50px;
+}
+
+.notificationContainer ul li .notifyInfo span {
+	font-family: 'MyWebFont', Helvetica, sans-serif;
+	font-weight: 100;
+	color: #656766;
+}
+
+.notificationContainer ul li .notifyInfo .notifyText {
+	display: block;
+	height: 50%;
+	width: 95%;
+	font-size: 0.89em;
+	padding-top: 12px;
+}
+
+.notificationContainer ul li .notifyInfo .notifyDate {
+	width: 90%;
+	font-size: 0.65em;
+	float: right;
+	text-align: right;
+}
+
+.homeContent .footer {
+    height: 30px;
+	margin: 5% auto 0;
+}

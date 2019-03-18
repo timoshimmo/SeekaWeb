@@ -1,0 +1,303 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Seeka</title>
+<link rel="styleSheet" href="css/styles.css" type="text/css" media="screen" />
+<link rel="styleSheet" href="css/global.css" type="text/css" media="screen" />
+<link rel="styleSheet" href="css/profile.css" type="text/css" media="screen" />
+<link rel="styleSheet" href="css/budget.css" type="text/css" media="screen" />
+<link href="css/billing_selector.css" rel="stylesheet">
+
+<link rel="stylesheet" href="css/jquery.slider.min.css" type="text/css">
+<link rel="stylesheet" href="css/jslider.css" type="text/css">
+<link rel="stylesheet" href="css/jslider.round.plastic.css" type="text/css">
+
+<script type="text/javascript" src="js/jquery-1.11.3.js"></script>
+<script src="js/icheck.js"></script>
+
+<script type="text/javascript" src="js/jquery.slider.min.js"></script>
+<script type="text/javascript" src="js/tmpl.js"></script>
+<script type="text/javascript" src="js/jquery.dependClass-0.1.js"></script>
+<script type="text/javascript" src="js/draggable-0.1.js"></script>
+<script type="text/javascript" src="js/jquery.slider.js"></script>
+
+<script>
+$(document).ready(function(){
+  $('input').iCheck({
+	checkboxClass: 'icheckbox_minimal',
+    radioClass: 'iradio_minimal',
+    increaseArea: '20%' // optional
+  });
+});
+</script>
+
+<script>
+$(document).ready(function(){
+  $('input').iCheck({
+    checkboxClass: 'icheckbox_minimal-blue',
+    radioClass: 'iradio_minimal-blue',
+    increaseArea: '20%' // optional
+  });
+});
+</script>
+
+<script type="text/javascript">	
+
+$(document).ready(function() { 
+  
+  var options = { 
+	  from: 10,
+	  to: 80, 
+	  heterogeneity: ['2/10', '97/75'], 
+	  scale: [10, 80],
+	  limits: false,
+	  step: 1,
+	  round: 1,
+	  format: { format: '' },
+	  skin: "round_plastic",
+	  onStateChange: function(value) { 
+	      var min = parseInt(value.split(";")[0]);
+	      var max = parseInt(value.split(";")[1]); 
+	      
+	    }
+	};
+  
+  jQuery("#Slider3").slider(options);
+  
+ // You can use the code below to retrieve the values.
+ /*
+	  var myPair = null;
+	 
+	  myPair = $("#Slider3").slider("value");
+	  var split = myPair.split(";");
+	  var min = split[0];
+	  var max = split[1];
+	  
+	  alert("Max :" + max);
+	  
+	  */
+  
+});
+</script>
+
+<script type="text/javascript">	
+
+$(document).ready(function() { 
+  
+  var options = { 
+		  from: 0,
+		  to: 50000, 
+		  heterogeneity: ['10/5000'], 
+		  scale: ['Free', '50&nbsp;000'],
+		  limits: false,
+		  step: 100,
+		  smooth: true,
+		  dimension: '&nbsp;',
+		  skin: "round_plastic",
+		  onStateChange: function(value) { 
+		      var min = parseInt(value.split(";")[0]);
+		      var max = parseInt(value.split(";")[1]); 
+		      
+		    }
+		};
+
+  jQuery("#Slider33").slider(options);
+  
+ // You can use the code below to retrieve the values.
+ /*
+	  var myPair = null;
+	 
+	  myPair = $("#Slider3").slider("value");
+	  var split = myPair.split(";");
+	  var min = split[0];
+	  var max = split[1];
+	  
+	  alert("Max :" + max);
+	  
+	  */
+  
+});
+</script>
+
+<script type="text/javascript">	
+
+$(document).ready(function() { 
+  
+  var options = { 
+		  from: 0,
+		  to: 10000000, 
+		  scale: [0, '10&nbsp;000&nbsp;000'],
+		  limits: false,
+		  step: 1000,
+		  smooth: true,
+		  dimension: '&nbsp;',
+		  round: 1,
+		  skin: "round_plastic",
+		  onStateChange: function(value) { 
+		      var min = parseInt(value.split(";")[0]);
+		      var max = parseInt(value.split(";")[1]); 
+		      
+		    }
+		};
+
+  jQuery("#Slider9").slider(options);
+  
+ // You can use the code below to retrieve the values.
+ /*
+	  var myPair = null;
+	 
+	  myPair = $("#Slider3").slider("value");
+	  var split = myPair.split(";");
+	  var min = split[0];
+	  var max = split[1];
+	  
+	  alert("Max :" + max);
+	  
+	  */
+  
+});
+</script>
+</head>
+<body>
+<div id="Container">
+	<div class="header">
+		<div class="menu_bar">
+			<div class="logo">
+				<img alt="Seeka Logo" src="images/seeka.png">
+			</div>
+			
+			<div class="userDetails">	
+				<div class="profileImg"></div>
+				<div class="profileDetails">
+					<span>Name</span> <br>
+					<span>example@gmail.com</span><br>
+					<a href="#" class="link_decoration">My Profile</a>
+				</div>
+				
+			</div>
+		</div>
+	</div>
+	<div class="title_content">
+		<div class="backButton"><a href="home.html"><img src="images/icon/back_button.png"></a></div>
+		<div class="billing_info">
+			<span>Ad Package</span>
+		</div>
+		
+		<div class="ad_creation">
+			<a href="budgetco.html" class="btntme">Create Ad</a>
+		</div>
+			
+	</div>
+	<div id="content">
+		<hr>
+		<div id="sidemenuBar">
+			<ul>
+				<li class="ad-activity-icon">
+					<a href="ad-activity.html">
+						<img src="images/icon/ad-activity-menu.png"><br>
+						<span>Ad Activity</span>
+					</a>
+				</li>
+				<li class="profile-icon">
+					<a href="profile-view.html">
+						<img src="images/icon/user-menu.png">
+						<span>Profile</span>
+					</a>
+				</li>
+				<li class="groups-icon">
+					<a href="groups.html">
+						<img src="images/icon/group-menu.png">
+						<span>Groups</span>
+					</a>
+				</li>
+				<li class="billing-icon">
+					<a href="billing-info-view.html">
+						<img src="images/icon/billing-menu.png">
+						<span>Billing</span>
+					</a>
+				</li>
+				<li class="settings-icon">
+					<a href="#">
+						<img src="images/icon/settings-menu.png">
+						<span>Settings</span>
+					</a>
+				</li>
+				<li class="security-icon">
+					<a href="security.html">
+						<img src="images/icon/security-menu.png">
+						<span>Security</span>
+					</a>
+				</li>
+			</ul>
+		</div>
+		<div class="formContainer">
+		<div id="formBody">
+			<form method="post" action="packages.html" id="budgetCoForm" name="budgetCoForm" class="budgetForm">
+			 	<div class="budgetWrapper">
+				<div id="filterBody" class="budar">
+					
+					<div class="budgetFilterContainer">
+						<h2>Filter</h2>
+						<label>Country </label><input type="text" name="blnName" class="txtdsn" value="+ All Countries"> <br />
+						<label>City </label><input type="text" name="blnPhone" class="txtdsn" value="+ All Cities"> <br />
+						<label>Gender </label><select name="Currency" id="currency" class="txtdsn">
+							<option value="" label="Any Gender"></option>
+							<option value="MALE">Male</option>
+							<option value="FEMALE">Female</option>
+						</select><br />
+						<label>University </label><input type="text" name="blnMobile" class="txtdsn" value="+ All Universities"> <br />
+						<label>Faculty </label><input type="text" name="blnEmail" class="txtdsn"> <br />
+						<label>Courses </label><input type="text" name="blnEmail" class="txtdsn"> <br />
+						<label>Interest/Hobbies </label><input type="text" name="blnEmail" class="txtdsn"> <br />
+						<label>Age Group </label><br />
+						<div class="layout-slider">
+							<input id="Slider3" type="slider" name="area" value="20;50" /> 
+						</div>
+					</div>
+				</div>
+				<div class="divider"></div>
+				<div id="budgetTargetBody" class="bugdar">
+					
+					<div class="budgetTargetContainer">
+						<h2>Budget &amp; Target</h2>
+						<p>How much do you want to spend?</p>
+						<label>Gender </label><select name="Currency" id="currency" class="txtdsn">
+							<option value="DAILY">Daily</option>
+							<option value="WEEKLY">Weekly</option>
+							<option value="MONTHLY">Monthly</option>
+							<option value="YEARLY">Yearly</option>
+						</select><br />
+						<label>Amount </label><input type="text" name="blnCity" class="txtdsn"> <br />
+						<label>Cost of Course </label><br />
+						<div class="layout-slider">
+							<input id="Slider33" type="slider" name="area" value="5000;30000" /> 
+						</div>
+						<label>Reachable Audience </label><br />
+						<div class="layout-slider">
+							<input id="Slider9" type="slider" name="area" value="6000000" /> 
+						</div>
+						
+						<div class="note">
+							<span>* The "Cost of Course" and "Reacheable Audience" are connected to each other. Therefore only the "Cost of Course" can be changed to know the "Reachable Audience"</span>
+						</div>
+					</div>
+					
+				</div>
+				</div>
+				<div class="budgetConfirm">
+					<input type="submit" value="Continue" class="btntme">
+				</div>
+			</form>
+		</div>
+		
+	    <div class="footer">
+			<div class="footer_links"> 
+				<p><a href="#">2015 Seeka</a>-<a href="#">Cookies, Privacy and Terms</a>-<a href="#">Contact</a></p>
+			</div> 
+	    </div>
+	</div>
+	</div>
+</div>
+</body>
+</html>

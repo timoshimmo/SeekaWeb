@@ -1,0 +1,258 @@
+@CHARSET "UTF-8";
+
+#content {
+	width: 100%;
+	height: 1950px;
+	position: relative;
+	margin: 0 auto;
+	display: block;
+}
+
+#content hr {
+	height: 1px;
+	background: #969897;
+	clear: both;
+	display: block;
+	margin: 0;
+	padding: 0;
+}
+
+#content .homeContent {
+	width: 88%;
+	height: 100%;
+	float: right;
+
+}
+
+.homeContent .homeBody {
+	width: 95%;
+	height: 95%;
+	margin: 0 auto;
+}
+
+table {
+    border-collapse: collapse;
+    width: 100%;
+
+}
+
+
+thead {
+    background: #424242;
+    color: #ffffff;
+}
+
+th {
+	text-align: center;
+	padding: 10px;
+	 font-family: 'MyWebFont', Helvetica, sans-serif;
+	font-size: 1em;
+	font-weight: 100;
+
+}
+
+table .icheckbox_minimal-blue  {
+	margin: 0 0 0 10px;
+	
+	}
+
+thead .advTabTitle {
+	text-align: left;
+}
+
+
+tbody {
+	color: #6f7170;
+}
+
+tbody td {
+	text-align: center;
+	padding: 15px 10px;
+	font-family: 'MyWebFont', Helvetica, sans-serif;
+	font-size: 0.87em;
+	font-weight: 100;
+	border-bottom: 1px solid #dfe3e4;
+}
+
+td:first-child, td:last-child {
+
+	border-bottom: 1px solid #dfe3e4;
+}
+
+
+
+tbody .linkCol {
+	color: #5dbfe6;
+	text-align: left;
+}
+
+tbody .linkCol a:link,  tbody .linkCol a:visited{
+	text-decoration: none;
+	color: #5dbfe6;
+}
+
+
+.adOptions {
+	width: 30%;
+	height: 25px;
+	margin: 5% auto 3%;
+	text-align: center;
+}
+
+.adOptions ul.adActivityOtions {
+	height: 100%;
+    -webkit-margin-before: 0em;
+    -webkit-margin-after: 0em;
+    -webkit-margin-start: 0px;
+    -webkit-margin-end: 0px;
+    -webkit-padding-start: 0px;
+     text-align: center;
+    display: block;
+    list-style-type: none;
+}
+
+.adOptions ul li {
+	height: 100%;
+	width: 18%;
+	text-align: center;
+	display: inline-block;
+	list-style-type: none;
+}
+
+.adOptions ul li a:link, .adOptions ul li a:visited {
+	height: 100%;
+	width: 100%;
+	text-align: center;
+	text-decoration: none;
+	font-family: 'MyWebFont', Helvetica, sans-serif;
+	font-size: 0.8em;
+	font-weight: 300;
+	color: #aeaeae;
+	display: block;
+}
+
+.adOptions ul li a:hover, .adOptions ul li a:active {
+	height: 100%;
+	width: 100%;
+	display: block;
+	text-align: center;
+	text-decoation: none;
+	font-family: 'MyWebFont', Helvetica, sans-serif;
+	font-size: 0.75em;
+	font-weight: 300;
+	color: #5fbfe6;
+}
+
+
+.adPages {
+	
+	height: 16px;
+	margin: 1% auto 12%;
+	text-align: center;
+}
+
+.adPages ul.adActivityPages {
+	height: 100%;
+    -webkit-margin-before: 0em;
+    -webkit-margin-after: 0em;
+    -webkit-margin-start: 0px;
+    -webkit-margin-end: 0px;
+    -webkit-padding-start: 0px;
+    text-align: center;
+    display: block;
+    list-style-type: none;
+    width: 60%;
+    margin: 0 auto;
+}
+
+.adPages ul li {
+	height: 100%;
+	width: 15px;
+	text-align: center;
+	display: inline-block;
+	list-style-type: none;
+	text-align: center;
+	border-right: 1px solid #d0d0d0;
+}
+
+.adPages ul li a {
+	
+	width: 80%;
+	display: block;
+}
+
+.adPages ul li:last-child {
+	border-right: 0;
+}
+
+.adPages ul li a:link, .adPages ul li a:visited {
+	
+	float: left;
+	text-align: center;
+	text-decoration: none;
+	font-family: 'MyWebFont', Helvetica, sans-serif;
+	font-size: 0.9em;
+	font-weight: bold;
+	color: #424242;
+}
+
+.adPages ul li a:hover, .adPages ul li a:active {
+	float: left;
+	text-align: center;
+	text-decoration: none;
+	font-family: 'MyWebFont', Helvetica, sans-serif;
+	font-size: 0.85em;
+	font-weight: bold;
+	color: #5fbfe6;
+}
+
+.topTitles {
+	height: 30px;
+	width: 100%;
+	margin: 5% auto 2%;
+}
+
+.topTitles .adOptions {
+	width: 30%;
+	height: 25px;
+	text-align: center;
+	float: right;
+	margin: 0;
+}
+
+.topTitles .adOptions ul {
+	text-align: right;
+
+}
+
+.topTitles .adOptions ul li {
+	height: 100%;
+	width: 10%;
+	text-align: right;
+	display: inline-block;
+	list-style-type: none;
+	margin-left: 5%;
+}
+
+.topTitles .adOptions ul.adActivityOtions li a:link, 
+.topTitles .adOptions ul.adActivityOtions li a:visited {
+	
+	text-align: right;
+}
+
+.topTitles .adOptions ul.adActivityOtions li a:hover, 
+.topTitles .adOptions ul.adActivityOtions li a:active {
+	
+	text-align: right;
+	
+}
+
+.topTitles .adActivityTitle {
+	font-family: 'MyWebFont', Helvetica, sans-serif;
+	font-size: 1em;
+	color: #5dbfe6;
+	font-weight: bold;
+	display: block;
+	float: left;
+	width: 15%;
+}

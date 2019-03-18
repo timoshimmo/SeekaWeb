@@ -1,0 +1,251 @@
+@CHARSET "UTF-8";
+
+.adInnerBody {
+	width: 95%;
+	height: 95%;
+	left: 50%;
+	top: 50%;
+	transform: translate(-50%, -50%);
+	-webkit-transform: translate(-50%, -50%);
+	-moz-transform: translate(-50%, -50%);
+	-o-transform: translate(-50%, -50%);
+	position: relative;
+	background: #eaeeef;
+	opacity: 1;
+}
+
+.adContentsCover {
+	width: 99.5%;
+	height: 99%;
+	border: 1px solid #c3c4c3;
+}
+
+.upwid {
+	background: #ecedef;
+	font-size: 0.72em;
+	font-family: 'MyWebFont', Helvetica, sans-serif;
+	font-weight: 300;
+	-moz-border-radius:3px;
+	-webkit-border-radius:3px;
+	-o-border-radius:3px;
+	border-radius:3px;
+	border: 1px solid #5dbde5;
+	padding-left: 10px;
+	width: 75%;
+	height: 20px;
+	margin-left: 30px;
+	margin-top: 10px;
+	color: #969595;
+}
+
+.adVisual .adVisualTop {
+	width: 100%;
+	height: 11%;
+	
+}
+
+.adVisual .adVisualTop img {
+	height: 100%;
+	width: 100%;
+}
+
+.adVisual .adVisualBottom {
+	width: 100%;
+	height: 7.5%;
+	background: #ffffff;
+	bottom: 0;
+	position: absolute;
+}
+
+.adVisual .adVisualBottom img {
+	height: 100%;
+	width: 100%;
+	
+}
+
+.adVisual .adContents {
+	width: 100%;
+	height: 62%;
+	top: 0;
+	left: 0;
+	background: #ffffff;
+	transform: translate(0, 0);
+	-webkit-transform: translate(0, 0);
+	-moz-transform: translate(0, 0);
+	-o-transform: translate(0, 0);
+	position: relative;
+	
+}
+
+.adVisual .adHalf {
+	opacity: 1;
+	
+}
+
+.adVisual .adfull .adContents img#fullAdImage {
+	width: 99%;
+	height: 78%;
+	margin: 0 auto;
+	background-color: #8f8f8f;
+	display: block;
+}
+
+.adVisual .adfull .adContents img#halfAdImage {
+	width: 99%;
+	height: 78%;
+	margin: 0 auto;
+	background-color: #8f8f8f;
+	display: block;
+}
+
+.adVisual .adHalf .adContents img#halfAdImage {
+	width: 99%;
+	height: 57%;
+	margin: 0 auto;
+	background-color: #8f8f8f;
+	display: block;
+}
+
+.adContents .adcontent {
+	margin-left: 5px;
+	text-align: left;
+}
+
+.adfull .adContents .adheading span {
+	color: #8f8f8f;
+	font-size: 0.8em;
+	font-family: 'MyWebFont', Helvetica, sans-serif;
+	font-weight: bold;
+	text-align: left;
+	display: block;
+	width: 100%;
+	padding-left: 5px;
+	padding-bottom: 5px;
+}
+
+.adHalf .adContents .adcontent span {
+	color: #8f8f8f;
+	font-size: 0.62em;
+	font-family: 'MyWebFont', Helvetica, sans-serif;
+	font-weight: 300;
+	height: 60%;
+	display: block;
+	overflow: hidden;
+  	text-overflow: ellipsis;
+	line-height: 13px;
+}
+
+.adContents .adlink {
+	text-align: left;
+	margin-left: 5px;
+}
+
+.adContents .adlink a:link, .adContents .adlink a:visited {
+	color: #32bcf8;
+	font-size: 0.75em;
+	font-family: 'MyWebFont', Helvetica, sans-serif;
+	font-weight: 300;
+	
+}
+
+.adfull .adContents .adcontent span {
+	color: #8f8f8f;
+	font-size: 0.7em;
+	font-family: 'MyWebFont', Helvetica, sans-serif;
+	font-weight: 300;
+	text-align: left;
+	line-height: 13px;
+	display: block;
+	width: 100%;
+}
+
+
+.adHalf .adContents .adheading {
+	color: #8f8f8f;
+	font-size: 0.8em;
+	font-family: 'MyWebFont', Helvetica, sans-serif;
+	font-weight: 300;
+	text-align: left;
+	margin-left: 5px;
+	font-weight: bold;
+}
+
+.adHalf .adContents .adtype {
+	color: #ccd2ec;
+	font-size: 0.8em;
+	font-family: 'MyWebFont', Helvetica, sans-serif;
+	font-weight: 300;
+	
+}
+
+.adVisual .lowerImg {
+	width: 100%;
+	height: 18%;
+	background: #ffffff;
+	position: absolute;
+	bottom: 35px;
+	
+}
+
+
+.adVisual .lowerImg img{
+	width: 70%;
+	height: 100%;
+	margin: 0 auto;
+	border: 0;
+}
+
+.half_content h2 {
+	font-size: 1.18em;
+	font-family: 'MyWebFont', Helvetica, sans-serif;
+	font-weight: bold;
+	margin: 0 0 15px 0;
+	width: 100px;
+}
+
+
+
+.half_content .select-image-type {
+	width: 100%;
+	margin: 0 auto 15px;
+}
+
+.half_content .upWrapperss label {
+	font-size: 0.83em;
+	font-family: 'MyWebFont', Helvetica, sans-serif;
+	font-weight: 400;
+	margin: 7px 0 0px 15px;
+	display: inline-block;
+
+}
+
+.half_content .select-image-type label {
+	font-size: 0.83em;
+	font-family: 'MyWebFont', Helvetica, sans-serif;
+	font-weight: 400;
+	margin: 0 0 0px 15px;
+	display: inline-block;
+
+}
+
+.half_content .iradio_minimal-blue  {
+	margin-left: 12%;
+	margin-top: 1%;
+}
+
+.select-image-type input[type="button"] {
+	background-color: #7ecaea;
+	-moz-border-radius:3px;
+	-webkit-border-radius:3px;
+	-o-border-radius:3px;
+	border-radius:3px;
+	width: 90px;
+	height: 25px;
+	border: 0;
+	margin: 2% 0 0 12%;
+	cursor: pointer;
+	font-size: 0.75em;
+	font-family: 'MyWebFont', Helvetica, sans-serif;
+	font-weight: bold;
+	
+}

@@ -1,0 +1,114 @@
+@CHARSET "UTF-8";
+
+#content {
+	width: 100%;
+	height: 1100px;
+	position: relative;
+	margin: 0 auto;
+	display: block;
+}
+
+#content #formBody{
+	width: 100%;
+    height: 92%;
+    margin: 0 auto;
+}
+
+.previewWrapper {
+	height: 89%;
+	width: 100%;
+}
+
+#formBody .divider {
+	height: 72%;
+	width: 2px;
+	margin-left: 15px;
+	margin-right: 15px;
+	float: left;
+	background: #d4d4d4;
+}
+
+#formBody .confirm {
+	width: 170px;
+	margin: 0 auto;
+	height: 60px;
+}
+
+
+.totalUnlocked {
+	width: 45%;
+	height: 50px;
+	margin-left: 15%;
+	margin-top: 0;
+}
+
+.totalUnlockedText {
+	width: 55%;
+	margin: auto 0;
+	float: left;
+	top: 50%;
+	transform: translate(0, -50%);
+	-webkit-transform: translate(0, -50%);
+	-moz-transform: translate(0, -50%);
+	-o-transform: translate(0, -50%);
+	position: relative;
+}
+
+#filterBody .totalUnlockedText span {
+	color: #424242;
+	font-size: 1.17em;
+	font-family: 'MyWebFont', Helvetica, sans-serif;
+	font-weight: bold;
+	display: block;
+}
+
+.totalCountCost {
+	width: 40%;
+	float: right;
+	margin: auto 0;
+	top: 50%;
+	transform: translate(0, -50%);
+	-webkit-transform: translate(0, -50%);
+	-moz-transform: translate(0, -50%);
+	-o-transform: translate(0, -50%);
+	position: relative;
+}
+
+.totalCount {
+	width: 48%;
+	float: left;
+	margin: auto 0;
+	text-align: center;
+	border-left: 1px solid #d9d9d9;
+	border-right: 1px solid #d9d9d9;
+}
+
+.totalCost {
+	width: 48%;
+	float: left;
+	text-align: center;
+	border-right: 1px solid #d9d9d9;
+}
+
+#filterBody .totalCount span.totalCountValue {
+	color: #2bb39f;
+	font-size: 0.9em;
+	font-family: 'MyWebFont', Helvetica, sans-serif;
+	font-weight: bold;
+	display: block;
+}
+
+#filterBody .totalCost span.totalCostValue {
+	color: #f8ae41;
+	font-size: 0.95em;
+	font-family: 'MyWebFont', Helvetica, sans-serif;
+	font-weight: bold;
+	display: block;
+}
+
+#filterBody .totalCountCost .totalText {
+	color: #7f7f7f;
+	font-size: 0.6em;
+	font-family: 'MyWebFont', Helvetica, sans-serif;
+	display: block;
+}

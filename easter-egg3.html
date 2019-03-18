@@ -1,0 +1,524 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Seeka</title>
+<link rel="styleSheet" href="css/global.css" type="text/css" media="screen" />
+<link rel="styleSheet" href="css/preview.css" type="text/css" media="screen" />
+<link rel="styleSheet" href="css/video-image.css" type="text/css" media="screen" />
+<link rel="styleSheet" href="css/locked-unlocked.css" type="text/css" media="screen" />
+<link rel="styleSheet" href="css/general.css" type="text/css" media="screen" />
+<link rel="styleSheet" href="css/easter-egg.css" type="text/css" media="screen" />
+<link href="css/selector_black.css" rel="stylesheet">
+<link href="css/selector_buttons.css" rel="stylesheet">
+
+<script type="text/javascript" src="js/jquery-1.11.3.js"></script>
+<script src="js/icheck.js"></script>
+<script type="text/javascript" src="js/jquery.mCustomScrollbar.js"></script>
+
+<script src="craftpip-jquery-confirm/dist/jquery-confirm.min.js"></script>
+<link href="craftpip-jquery-confirm/dist/jquery-confirm.min.css" rel="stylesheet" type="text/css"/>
+
+
+<script type="text/javascript" charset="utf-8">
+$(document).ready(function(){	
+	$('.selectionBody input').iCheck({
+	checkboxClass: 'icheckbox_minimal',
+	radioClass: 'iradio_minimal',
+    increaseArea: '20%' // optional
+  });
+});
+</script>
+
+<script type="text/javascript" charset="utf-8">
+$(document).ready(function(){
+	$('.daysOptions input').iCheck({
+	checkboxClass: 'icheckbox_minimal-blue',
+    radioClass: 'iradio_minimal-blue',
+    increaseArea: '20%' // optional
+  });
+});
+</script>
+
+<script type="text/javascript">
+$(document).ready(function() {
+	
+	$("#halfHeadingText").on("change paste keyup", function() {
+		var lengths = $(this).val().length;
+		var heading = $(this).val();
+		var length = 50-lengths;
+		
+		var defValue = "X Days only left!";
+		
+		if(lengths > 0) {
+			$('.daysLeftValue').text(heading);
+			$('.halfcharNumValue').text(length);
+		}
+		else {
+			$('.daysLeftValue').text(defValue);
+		}
+		
+	});
+	
+	
+	$('#halfContentText').keyup(function() {
+		var lengths = $(this).val().length;
+		var value = $(this).val();
+		var length = 500-lengths;
+		
+		var defValue = "";
+		
+		if(lengths > 0) {
+			$('.eeggcontent').text(value);
+			$('.halfcontentCharNumValue').text(length);
+		}
+		else {
+			$('.eeggcontent').text(defValue);
+		}
+		
+	});
+	
+});
+
+</script>
+
+<script type="text/javascript">
+	$(document).ready(function() { 
+		
+		 var element = $('#fileUpload');
+		
+		 function readURL(input) {
+			 if (input.files && input.files[0]) {
+				 var reader = new FileReader();
+				 
+				 reader.onload = function (e) {
+					
+					$('#uniImg').attr('src', e.target.result);
+			
+		         }
+				 reader.readAsDataURL(input.files[0]);
+			 }
+		 }
+	
+		$('#upload').click(function(){
+			var imgDisplay = $('#uniImg').css("display");
+			
+			 if(imgDisplay == 'none') {
+				 alert("Uploading an image will delete all your contents.");
+			 }
+			  element.click();
+		});
+		
+		element.change(function() {
+			readURL(this);
+		});
+		
+	});
+</script>
+
+<script>
+$(document).ready(function(){
+	$('.listSelection').mCustomScrollbar({
+		theme: 'dark-2'
+	});
+	
+});
+</script> 
+
+<script type="text/javascript">
+$(document).ready(function() {
+	
+	$('#EeggContinues').click(function() {
+			$.confirm({
+			    title: 'Confirm to Publish Ad',
+			    content: 'Are you sure you want to perform this action?',
+			    columnClass: 'col-md-4 col-md-offset-4',
+			    animationBounce: 2,
+			    confirmButton: 'Yes',
+			    cancelButton: 'No',
+			    confirm: function(){
+			    	var host = window.location.host;
+			    	var link = window.location.pathname;
+			    	
+			    	var url = host+"/Seeka/ad-activity.html";
+			    	window.location.href= "http://"+url;
+			    },
+			    cancel: function(){
+			       
+			    }
+			});
+		
+		return false;
+	});
+			
+});
+</script>
+
+</head>
+<body>
+<div id="Container">
+	<div class="header">
+		<div class="menu_bar">
+			<div class="logo">
+				<img alt="Seeka Logo" src="images/seeka.png">
+			</div>
+			
+			<div class="userDetails">	
+				<div class="profileImg"></div>
+				<div class="profileDetails">
+					<span>Name</span> <br>
+					<span>example@gmail.com</span><br>
+					<a href="#" class="link_decoration">My Profile</a>
+				</div>
+				
+			</div>
+		</div>
+	</div>
+	<div class="title_content">
+		<div class="backButton"><a href="easter-egg1.html"><img src="images/icon/back_button.png"></a></div>
+		<div class="billing_info">
+			<span>Ad Package</span>
+		</div>
+		
+		<div class="ad_creation">
+			<a href="budgetco.html" class="btntme">Create Ad</a>
+		</div>
+			
+	</div>
+	<div id="content">
+		<hr>
+		<div id="sidemenuBar">
+				<ul>
+				<li class="ad-activity-icon">
+					<a href="ad-activity.html">
+						<img src="images/icon/ad-activity-menu.png"><br>
+						<span>Ad Activity</span>
+					</a>
+				</li>
+				<li class="profile-icon">
+					<a href="profile-view.html">
+						<img src="images/icon/user-menu.png">
+						<span>Profile</span>
+					</a>
+				</li>
+				<li class="groups-icon">
+					<a href="groups.html">
+						<img src="images/icon/group-menu.png">
+						<span>Groups</span>
+					</a>
+				</li>
+				<li class="billing-icon">
+					<a href="billing-info-view.html">
+						<img src="images/icon/billing-menu.png">
+						<span>Billing</span>
+					</a>
+				</li>
+				<li class="settings-icon">
+					<a href="#">
+						<img src="images/icon/settings-menu.png">
+						<span>Settings</span>
+					</a>
+				</li>
+				<li class="security-icon">
+					<a href="security.html">
+						<img src="images/icon/security-menu.png">
+						<span>Security</span>
+					</a>
+				</li>
+			</ul>
+		</div>
+		<div class="formContainer">
+		<div id="formBody">
+			<form method="post" action="" id="AdForm" name="AdForm" class="adForm" autocomplete="off">
+			 	<div class="previewWrapper">
+				<div id="filterBody" class="budar">
+				
+					<h2 class="eeggHeader">Easter Egg</h2>
+					<div class="fullBody scrollContents" id="fullInputs">
+						
+						<div class="full_content scrollBody">
+							<div class="selectionBody">
+								<div class="selectionTitle">
+									<span> 1. Selection</span>
+								</div>
+								<div id="content-1" class="listSelection content">
+									
+									<div class="selectionContent">
+										<ul class="selectionListview">
+											<li>
+												<span class="facultyTitle">Chemical and Natural Resources Faculty</span>
+												<div class="courseSelection">
+													<span class="courses">Chemical Engineering (Pure)</span>
+													<input type="checkbox" value="CEPure" checked>
+												</div>
+												<div class="courseSelection">
+													<span class="courses">Chemical Engineering (Gas)</span>
+													<input type="checkbox" value="CEGas" checked>
+												</div>
+												<div class="courseSelection">
+													<span class="courses">Chemical Engineering (Pure)</span>
+													<input type="checkbox" value="CAnalysis" checked>
+												</div>
+											
+											</li>
+											
+											<li>
+												<span class="facultyTitle">Chemical and Natural Resources Faculty</span>
+												<div class="courseSelection">
+													<span class="courses">Chemical Engineering (Pure)</span>
+													<input type="checkbox" name="selectCourse" value="CEPure">
+												</div>
+												<div class="courseSelection">
+													<span class="courses">Chemical Engineering (Gas)</span>
+													<input type="checkbox" name="selectCourse" value="CEGas" checked>
+												</div>
+												<div class="courseSelection">
+													<span class="courses">Chemical Engineering (Pure)</span>
+													<input type="checkbox" name="selectCourse" value="CAnalysis">
+												</div>
+											
+											</li>
+											
+											<li>
+												<span class="facultyTitle">Chemical and Natural Resources Faculty</span>
+												<div class="courseSelection">
+													<span class="courses">Chemical Engineering (Pure)</span>
+													<input type="checkbox" name="selectCourse" value="CEPure">
+												</div>
+												<div class="courseSelection">
+													<span class="courses">Chemical Engineering (Gas)</span>
+													<input type="checkbox" name="selectCourse" value="CEGas" checked>
+												</div>
+												<div class="courseSelection">
+													<span class="courses">Chemical Engineering (Pure)</span>
+													<input type="checkbox" name="selectCourse" value="CAnalysis">
+												</div>
+											
+											</li>
+											
+											<li>
+												<span class="facultyTitle">Chemical and Natural Resources Faculty</span>
+												<div class="courseSelection">
+													<span class="courses">Chemical Engineering (Pure)</span>
+													<input type="checkbox" name="selectCourse" value="CEPure" checked>
+												</div>
+												<div class="courseSelection">
+													<span class="courses">Chemical Engineering (Gas)</span>
+													<input type="checkbox" name="selectCourse" value="CEGas">
+												</div>
+												<div class="courseSelection">
+													<span class="courses">Chemical Engineering (Pure)</span>
+													<input type="checkbox" name="selectCourse" value="CAnalysis" checked>
+												</div>
+											
+											</li>
+											
+											<li>
+												<span class="facultyTitle">Chemical and Natural Resources Faculty</span>
+												<div class="courseSelection">
+													<span class="courses">Chemical Engineering (Pure)</span>
+													<input type="checkbox" name="selectCourse" value="CEPure">
+												</div>
+												<div class="courseSelection">
+													<span class="courses">Chemical Engineering (Gas)</span>
+													<input type="checkbox" name="selectCourse" value="CEGas">
+												</div>
+												<div class="courseSelection">
+													<span class="courses">Chemical Engineering (Pure)</span>
+													<input type="checkbox" name="selectCourse" value="CAnalysis" checked>
+												</div>
+											
+											</li>
+											
+											<li>
+												<span class="facultyTitle">Chemical and Natural Resources Faculty</span>
+												<div class="courseSelection">
+													<span class="courses">Chemical Engineering (Pure)</span>
+													<input type="checkbox" name="selectCourse" value="CEPure" checked>
+												</div>
+												<div class="courseSelection">
+													<span class="courses">Chemical Engineering (Gas)</span>
+													<input type="checkbox" name="selectCourse" value="CEGas">
+												</div>
+												<div class="courseSelection">
+													<span class="courses">Chemical Engineering (Pure)</span>
+													<input type="checkbox" name="selectCourse" value="CAnalysis" checked>
+												</div>
+											
+											</li>
+											
+											<li>
+												<span class="facultyTitle">Chemical and Natural Resources Faculty</span>
+												<div class="courseSelection">
+													<span class="courses">Chemical Engineering (Pure)</span>
+													<input type="checkbox" name="selectCourse" value="CEPure" checked>
+												</div>
+												<div class="courseSelection">
+													<span class="courses">Chemical Engineering (Gas)</span>
+													<input type="checkbox" name="selectCourse" value="CEGas" checked>
+												</div>
+												<div class="courseSelection">
+													<span class="courses">Chemical Engineering (Pure)</span>
+													<input type="checkbox" name="selectCourse" value="CAnalysis">
+												</div>
+											
+											</li>
+										</ul>
+									</div>
+								</div>
+								
+							</div>
+							
+							
+							<p class="eeNotes">*If no faculty and courses are chosen then the ads will automatically
+							be pushed on every courses offered by your university.</p>
+							
+							<span class="dayOption">Choose your days of reminder for the easter egg promotion.</span>
+							
+							<div class="daysOptions">
+								<input type="radio" id="fifthOption" name="iCheck" value="fifth" checked> <label for="fifthOption">5th day</label><br>
+								<input type="radio" id="fifteenthOption" name="iCheck" value="fifteenth"> <label for="fifteenthOption">15th day</label><br>
+								<input type="radio" id="twentiethOption" name="iCheck" value="twentieth" checked> <label for="twentiethOption">20th day</label><br>
+								<input type="radio" id="lastDayOption" name="iCheck" value="lastDay"> <label for="lastDayOption">Last day</label><br>
+								<input type="radio" id="dayBeforeOption" name="iCheck" value="dayBefore" checked> <label for="dayBeforeOption">One day before</label><br>
+								
+							</div>
+						</div>
+					</div>
+					
+					<div class="halfBody" id="halfInputs">
+						<div class="half_content">
+							
+							<div class="upWrappers headWth">
+								<span> 2. Heading</span>
+								<input type="text" name="headingText" placeholder="Write your text here" class="uplwid" id="halfHeadingText" maxlength="50"><span class="charNum">Characters left: </span><span class="halfcharNumValue">50</span>
+							</div>
+							
+							<div class="upWrapperss">
+								<span> 3. Content</span>
+								<textarea placeholder="Write your ad's content text here" class="upwids" id="halfContentText" maxlength="200"></textarea>
+								<span class="charNums">Characters left: </span><span class="halfcontentCharNumValue">200</span>
+							</div>
+							
+							<div class="upWrappers notesimg">
+								<span> 4. University Image</span><img class="noteImg" src="images/info_blue.png">
+								<input type="file" name="logo" style="display:none;" id="fileUpload"/>
+								<input type="button" value="Upload Image" class="btntme" id="upload">
+							</div>
+							
+							<div class="dimensionNote">
+								<div class="dimensionNoteBody">
+									<img src="images/info_white.png">
+									<span class="dimensionNoteText">The dimension of the image must be
+									minimum of 500 X 282 pixels.
+									</span>
+								</div>
+								
+							</div>
+							
+							<p class="eeNotes">*The background color of the pop up will be similar as the easter egg color
+							to maintain the color consistency.</p>
+						</div>
+						
+						<div class="totalUnlocked">
+						
+							<div class="totalUnlockedText">
+								<span>Total Users Unlocked</span>
+							</div>
+							<div class="totalCountCost">
+								<div class="totalCount">
+									<span class="totalCountValue">2359</span>
+									<span class="totalText">COUNT</span>
+								</div>
+								<div class="totalCost">
+									<span class="totalCostValue">$ 4500</span>
+									<span class="totalText">COST</span>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="divider"></div>
+				<div id="budgetTargetBody" class="bugdar">
+					
+					<div class="budgetTargetContainer">
+						<div class="adVisual">
+							<div class="adfull avby">
+								<div class="adInnerBody">
+				 					<div class="adVisualTop">
+				 						<img src="images/topBar_results.png">
+				 					</div>
+				 					<div class="adContents">
+				 						<div class="adContentsCover">
+				 							<div class="close"><img src="images/icon/cross75.png"></div>
+				 							<div class="imgBody appsBack">
+				 								<div class="headingDetails">
+		 						    				<span class="daysLeftValue">TEN Days only Left!</span>	
+		 						    				<span class="eeggcontent">Only 10 days before the XXX university
+					 						    		offer expires.<br>If you enroll within this 10 day(s), specials
+					 						    		will be offered to you upon enrolment.<br>Dont miss this golden opportunity!</span>	
+				 						    	</div>
+				 						    	
+				 						    	<div class="trimmer">
+				 						    	
+				 						    		<div class="centerNotification">
+				 						    			
+				 						    			<div class="innerNotifyBody">
+				 						    				
+				 						    				<div class="innerNotifyContent">
+				 						    				
+				 						    					<div class="innerNotify">
+				 						    					
+				 						    						<span class="innerSpan">Left</span>
+				 						    						<div class="Notify">
+				 						    							<span class="starImg">&#9734;</span>
+				 						    							<span class="Notifydays">10</span>
+				 						    							<span class="starImg">&#9734;</span>
+				 						    						</div>
+				 						    						<span class="innerSpan">day(s) only</span>
+				 						    					</div>
+				 						    					
+				 						    				</div>
+				 						    			
+				 						    			</div>
+				 						    		</div>
+				 						    	
+					 						    	<div class="appBody">
+					 						    		<div class="appImage">
+					 						    			<img src="" id="uniImg">
+					 						    		</div>
+					 						    		
+					 							</div>
+				 							</div>
+				 							<div class="adlink" id="fullAdLink">
+					 							<a href="#" target="_blank">View University</a>
+					 						</div>
+				 						</div>
+				 					</div>
+				 					<div class="adVisualBottom">
+				 						<img src="images/advbottom.png">
+				 					</div>
+				 					
+				 				</div>
+			 				</div>
+						</div>
+					</div>
+					</div>
+				</div>
+				</div>
+				<div class="confirm">
+					<input type="submit" value="Continue" class="btntme" id="EeggContinues">
+				</div>
+			</form>
+		</div>
+		
+	    <div class="footer">
+			<div class="footer_links"> 
+				<p><a href="#">2015 Seeka &nbsp;</a>-&nbsp;<a href="#">Cookies, Privacy and Terms&nbsp;</a>-&nbsp;<a href="#">Contact</a></p>
+			</div> 
+	    </div>
+	</div>
+	</div>
+</div>
+</body>
+</html>

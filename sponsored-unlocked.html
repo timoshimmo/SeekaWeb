@@ -1,0 +1,343 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Seeka</title>
+<link rel="styleSheet" href="css/global.css" type="text/css" media="screen" />
+<link rel="styleSheet" href="css/preview.css" type="text/css" media="screen" />
+<link rel="styleSheet" href="css/video-image.css" type="text/css" media="screen" />
+<link rel="styleSheet" href="css/homepages.css" type="text/css" media="screen" />
+<link rel="styleSheet" href="css/general.css" type="text/css" media="screen" />
+<link rel="stylesheet" href="css/selector_buttons.css" type="text/css">
+
+<script type="text/javascript" src="js/jquery-1.11.3.js"></script>
+<script type="text/javascript" src="js/jquery-ui-1.11.4/jquery-ui.js"></script>
+<script src="js/icheck.js"></script>
+
+<link href="js/jquery-ui-1.11.4/jquery-ui.css" rel="stylesheet" type="text/css"/>
+<link href="js/jquery-ui-1.11.4/jquery-ui.theme.css" rel="stylesheet" type="text/css"/>
+<link rel="styleSheet" href="colorpicker/jquery.colorpicker.css" type="text/css" media="screen" />
+
+<script type="text/javascript" src="colorpicker/jquery.colorpicker.js"></script>
+
+<script src="craftpip-jquery-confirm/dist/jquery-confirm.min.js"></script>
+<link href="craftpip-jquery-confirm/dist/jquery-confirm.min.css" rel="stylesheet" type="text/css"/>
+
+<script type="text/javascript" charset="utf-8">
+$(document).ready(function(){	
+	$('input').iCheck({
+	checkboxClass: 'icheckbox_minimal',
+    radioClass: 'iradio_minimal',
+    increaseArea: '20%' // optional
+  });
+});
+</script>
+
+<script type="text/javascript" charset="utf-8">
+$(document).ready(function(){
+	$('input').iCheck({
+    checkboxClass: 'icheckbox_minimal-blue',
+    radioClass: 'iradio_minimal-blue',
+    increaseArea: '20%' // optional
+  });
+});
+</script>
+
+<script type="text/javascript">
+$(document).ready(function() {
+	
+	$("#sponsHeadingText").on("change paste keyup", function() {
+		var lengths = $(this).val().length;
+		var heading = $(this).val();
+		var length = 50-lengths;
+		
+		var defValue = "Company";
+		
+		if(lengths > 0) {
+			$('#sponsor').text(heading);
+			$('.charNumValue').text(length);
+		}
+		else {
+			$('#sponsor').text(defValue);
+			$('.charNumValue').text(length);
+		}
+		
+	});
+	
+	
+});
+
+</script>
+
+<script type="text/javascript" charset="utf-8">
+
+$(function() {
+	
+	 $('#chooser').click(function() {
+		 return false;
+	 });
+	 
+    $('#chooser').colorpicker({
+		altField: '.UlsponsoredBox',
+		altProperties: 'background-color',
+		altAlpha: true,
+		alpha: true,
+		parts: 'full',
+		draggabble: true,
+		inline: false,
+		color: '#f1592a'
+	});
+    
+    $('#fchooser').click(function() {
+		 return false;
+	 });
+	
+	 $('#fchooser').colorpicker({
+		 	altField: '.sponsBoxText span',
+			altProperties: 'color',
+			altAlpha: true,
+			alpha: true,
+			parts: 'full',
+			draggabble: true,
+			inline: false,
+			color: '#ffffff'
+	});
+		
+});
+    
+</script>
+
+<script type="text/javascript">
+	$(document).ready(function() { 
+		
+		 var element = $('#fileUpload');
+		
+		 function readURL(input) {
+			 if (input.files && input.files[0]) {
+				 var reader = new FileReader();
+				 
+				 reader.onload = function (e) {
+					
+					$('#sponsor-logo').attr('src', e.target.result);
+			
+		         }
+				 reader.readAsDataURL(input.files[0]);
+			 }
+		 }
+	
+		$('#upload').click(function(){
+			var imgDisplay = $('#sponsor-logo').css("display");
+			
+			 if(imgDisplay == 'none') {
+				 alert("Uploading an image will delete all your contents.");
+			 }
+			  element.click();
+		});
+		
+		element.change(function() {
+			readURL(this);
+		});
+		
+	});
+</script>
+
+<script type="text/javascript">
+$(document).ready(function() {
+	
+	$('#Continue').click(function() {
+		$.confirm({
+		    title: 'Confirm to Publish Ad',
+		    content: 'Are you sure you want to perform this action?',
+		    columnClass: 'col-md-4 col-md-offset-4',
+		    animationBounce: 2,
+		    confirmButton: 'Yes',
+		    cancelButton: 'No',
+		    confirm: function(){
+		    	var host = window.location.host;
+		    	var link = window.location.pathname;
+		    	
+		    	var url = host+"/Seeka/ad-activity.html";
+		    	window.location.href= "http://"+url;
+		    },
+		    cancel: function(){
+		       
+		    }
+		});
+	
+	return false;
+});
+	
+	
+});
+</script>
+
+</head>
+<body>
+<div id="Container">
+	<div class="header">
+		<div class="menu_bar">
+			<div class="logo">
+				<img alt="Seeka Logo" src="images/seeka.png">
+			</div>
+			
+			<div class="userDetails">	
+				<div class="profileImg"></div>
+				<div class="profileDetails">
+					<span>Name</span> <br>
+					<span>example@gmail.com</span><br>
+					<a href="budgetco.html" class="link_decoration">My Profile</a>
+				</div>
+				
+			</div>
+		</div>
+	</div>
+	<div class="title_content">
+		<div class="backButton"><a href="sponsored-locked.html"><img src="images/icon/back_button.png"></a></div>
+		<div class="billing_info">
+			<span>Ad Package</span>
+		</div>
+		
+		<div class="ad_creation">
+			<a href="#" class="btntme">Create Ad</a>
+		</div>
+			
+	</div>
+	<div id="content">
+		<hr>
+		<div id="sidemenuBar">
+				<ul>
+				<li class="ad-activity-icon">
+					<a href="ad-activity.html">
+						<img src="images/icon/ad-activity-menu.png"><br>
+						<span>Ad Activity</span>
+					</a>
+				</li>
+				<li class="profile-icon">
+					<a href="profile-view.html">
+						<img src="images/icon/user-menu.png">
+						<span>Profile</span>
+					</a>
+				</li>
+				<li class="groups-icon">
+					<a href="groups.html">
+						<img src="images/icon/group-menu.png">
+						<span>Groups</span>
+					</a>
+				</li>
+				<li class="billing-icon">
+					<a href="billing-info-view.html">
+						<img src="images/icon/billing-menu.png">
+						<span>Billing</span>
+					</a>
+				</li>
+				<li class="settings-icon">
+					<a href="#">
+						<img src="images/icon/settings-menu.png">
+						<span>Settings</span>
+					</a>
+				</li>
+				<li class="security-icon">
+					<a href="security.html">
+						<img src="images/icon/security-menu.png">
+						<span>Security</span>
+					</a>
+				</li>
+			</ul>
+		</div>
+		<div class="formContainer">
+		<div id="formBody">
+			<form method="post" action="" id="AdForm" name="AdForm" class="adForm" autocomplete="off">
+			 	<div class="previewWrapper">
+				<div id="filterBody" class="budar">
+					
+					<div class="halfBody" id="halfInputs">
+						<div class="half_content">
+						
+							<h2 class="sponsHeader">Sponsored Heading</h2>
+				 			<div class="upWrappers" id="surHeading">				
+								<span> 1. Sponsored by</span>
+								<input type="text" name="headingText" placeholder="Write your text here" class="upwid" id="sponsHeadingText" maxlength="50"><span class="charNum">Characters left: </span><span class="charNumValue">50</span>
+							</div>
+							
+							<div class="upWrapper">
+								<span> 2. Background Color</span>
+								<br>
+								<span class="topTitle">Background Color</span>
+								<a href="#" class="btntme" id="chooser">Choose Color</a>
+							</div>
+							
+							<div class="upWrapper">
+								<span> 3. Font Color</span>
+								<br>
+								<span class="topTitle">Font Color</span>
+								<a href="#" class="btntme" id="fchooser">Choose Color</a>
+							</div>
+							
+							<div class="upWrappers">
+								<span> 4. Logo</span>
+								<input type="file" name="logo" style="display:none;" id="fileUpload"/>
+								<input type="button" value="Upload Image" class="btntme" id="upload">
+							</div>
+							<p>* The dimension of the heading box is 630px X 50px. The height of the logo must be at least a height of 50px</p>
+							<span class="unlockOption">If you wish to use the same sponsored box from the locked screen just click on this button and the ads will be placed automatically.</span>
+							
+							<div class="sponsMaintain">
+								<input type="button" value="Maintain" class="btntme" id="maintain">
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="divider"></div>
+				<div id="budgetTargetBody" class="bugdar">
+					
+					<div class="budgetTargetContainer">
+						<div class="adVisual">
+								<div class="adHalf avby">
+			 					<div class="adInnerBody">
+				 					<div class="adVisualTop">
+				 						<img src="images/unlocked-topbar.png">
+				 					</div>
+				 					<div class="adVTopFilter">
+				 						<img src="images/imgTopMenu.png">
+				 					</div>
+				 					
+				 					<div class="UlsponsoredBox">
+				 						<div class="sponsBoxText"><span>Sponsored by&nbsp;</span><span id="sponsor">Company</span></div>
+				 						<div class="sponsLogo">
+				 							<img id="sponsor-logo">
+				 						</div>
+				 					</div>
+				 					
+				 					<div class="UladSponsContents">
+				 						<img src="images/unlocked-spons-body.png" id="spons-top">
+					 						
+				 					</div>
+				 					
+				 					<div class="adSponsBottom">
+			 							<img src="images/advbottom.png">
+			 						</div>
+				 				</div>
+			 					
+			 					
+			 					</div>
+			 				</div>
+					</div>
+					</div>
+				</div>
+				
+				<div class="confirm">
+					<input type="submit" value="Continue" class="btntme" id="Continue">
+				</div>
+			</form>
+		</div>
+		
+	    <div class="footer">
+			<div class="footer_links"> 
+				<p><a href="#">2015 Seeka &nbsp;</a>-&nbsp;<a href="#">Cookies, Privacy and Terms&nbsp;</a>-&nbsp;<a href="#">Contact</a></p>
+			</div> 
+	    </div>
+	</div>
+	</div>
+</div>
+</body>
+</html>

@@ -1,0 +1,364 @@
+@CHARSET "UTF-8";
+
+.adInnerBody {
+	width: 90%;
+	height: 90%;
+	left: 50%;
+	top: 50%;
+	transform: translate(-50%, -50%);
+	-webkit-transform: translate(-50%, -50%);
+	-moz-transform: translate(-50%, -50%);
+	-o-transform: translate(-50%, -50%);
+	position: relative;
+	opacity: 1;
+}
+
+
+.adContentsCover {
+	width: 90%;
+	height: 90%;
+	left: 50%;
+	top: 50%;
+	transform: translate(-50%, -50%);
+	-webkit-transform: translate(-50%, -50%);
+	-moz-transform: translate(-50%, -50%);
+	-o-transform: translate(-50%, -50%);
+	position: relative;
+	border: 1px solid #ffffff;
+	position: relative;
+	-moz-border-radius:3px;
+	-webkit-border-radius:3px;
+	-o-border-radius:3px;
+	border-radius:3px;
+	
+}
+
+.close {
+	width: 18px;
+	height: 18px;
+	position: absolute;
+	left: 95%;
+	top: -2%;
+	background: #424242;
+}
+
+.close img {
+	width: 100%;
+	height: 100%;
+	margin-top: 0;
+}
+
+.adVisual .adVisualTop {
+	width: 100%;
+	height: 11%;
+	
+}
+
+.adVisual .adVisualTop img {
+	height: 100%;
+	width: 100%;
+}
+
+.adVisual .adVisualBottom {
+	width: 100%;
+	height: 9%;
+	background: #ffffff;
+	bottom: 0;
+	position: absolute;
+}
+
+.adVisual .adVisualBottom img {
+	height: 100%;
+	width: 100%;
+	
+}
+
+.adVisual .adContents {
+	width: 100%;
+	height: 80%;
+	left: 0;
+	top: 0;
+	transform: translate(0, 0);
+	-webkit-transform: translate(0, 0);
+	-moz-transform: translate(0, 0);
+	-o-transform: translate(0, 0);
+	position: relative;
+	background: #424242;
+
+}
+
+.imgBody {
+	width: 90%;
+	height: 90%;
+	margin: 0 auto;
+	top: 50%;
+	transform: translate(0, -50%);
+	-webkit-transform: translate(0, -50%);
+	-moz-transform: translate(0, -50%);
+	-o-transform: translate(0, -50%);
+	position: relative;
+	background: #ffffff;
+	display: block;
+}
+
+.adVisual .adfull .adContents .imgBody img {
+	width: 100%;
+	height: 88%;
+	margin: 0 auto;
+	background-color: #8f8f8f;
+	display: block;
+}
+
+.adVisual .adfull .adContents .imgBody img#halfAdImage {
+	width: 100%;
+	height: 50%;
+	margin: 0 auto;
+	background-color: #8f8f8f;
+	display: block;
+}
+
+.adVisual .adHalf .adContents img#halfAdImage {
+	width: 100%;
+	height: 50%;
+	margin: 0 auto;
+	background-color: #8f8f8f;
+	display: block;
+}
+
+.adContents .adcontent {
+	text-align: left;
+	height: 30%;
+	width: 100%;
+	margin: 0 auto;
+	border-bottom: 0.05em solid #8f8f8f;
+	
+}
+
+.adfull .adContents .adheading span {
+	color: #8f8f8f;
+	font-size: 0.8em;
+	font-family: 'MyWebFont', Helvetica, sans-serif;
+	font-weight: bold;
+	text-align: left;
+	display: block;
+	width: 100%;
+	padding-left: 5px;
+	padding-bottom: 5px;
+}
+
+.adHalf .adContents .adcontent span {
+	color: #8f8f8f;
+	font-size: 0.6em;
+	font-family: 'MyWebFont', Helvetica, sans-serif;
+	font-weight: 300;
+	height: 100%;
+	width: 96%;
+	margin: 0 auto;
+	display: block;
+	overflow: hidden;
+  	text-overflow: ellipsis;
+	line-height: 11px;
+	padding-top: 5px;
+}
+
+.adHalf .adContents .adlink {
+	width: 100%;
+	height: 12%;
+	margin: 0 auto;
+	background: #ffffff;
+	text-align: left;
+}
+
+.adContents .adlink {
+	width: 100%;
+	height: 12%;
+	margin: 0 auto;
+	background: #ffffff;
+	text-align: left;
+}
+
+.adContents .adlink a:link {
+	width: 40%;
+	text-decoration: none;
+	font-size: 0.85em;
+	font-family: 'MyWebFont', Helvetica, sans-serif;
+	font-weight: 300;
+	color: #424242;
+	margin-left: 5px;
+	display: block;
+	top: 50%;
+	transform: translate(0, -50%);
+	-webkit-transform: translate(0, -50%);
+	-moz-transform: translate(0, -50%);
+	-o-transform: translate(0, -50%);
+	position: relative;
+	
+}
+
+.adContents .adlink a:visited {
+	color: #424242;
+	
+	}
+
+.adfull .adContents .adcontent span {
+	color: #8f8f8f;
+	font-size: 0.7em;
+	font-family: 'MyWebFont', Helvetica, sans-serif;
+	font-weight: 300;
+	text-align: left;
+	line-height: 13px;
+	display: block;
+	width: 100%;
+}
+
+/*
+.adfull .adContents .adheading {
+	color: #ffffff;
+	font-size: 2.1em;
+	font-family: 'MyWebFont', Helvetica, sans-serif;
+	font-weight: bold;
+	position: absolute;
+	left: 50%;
+	top: 35%;
+	transform: translate(-50%, -50%);
+	-webkit-transform: translate(-50%, -50%);
+	-moz-transform: translate(-50%, -50%);
+	-o-transform: translate(-50%, -50%);
+}
+*/
+
+#halfAdHeading {
+	text-align: center;
+	display: block;
+	width: 100%;
+	height: 7%;
+	border-bottom: 0.01em solid #8f8f8f;
+	
+}
+
+#halfVidHeading {
+	text-align: center;
+	display: block;
+	width: 100%;
+	height: 7%;
+	border-bottom: 0.01em solid #8f8f8f;
+	background: #e32728;
+}
+
+#halfAdContent span#halfVidText {
+	color: #8f8f8f;
+	font-size: 0.8em;
+	font-family: 'MyWebFont', Helvetica, sans-serif;
+	font-weight: 300;
+	text-align: left;
+	line-height: 16px;
+	display: block;
+	width: 95%;
+	margin: 5px auto 0;
+}
+
+#VidBottom {
+	width: 100%;
+	height: 8%;
+	background: #ffffff;
+	bottom: 0;
+	position: absolute;
+}
+
+.adHalf .adContents .adheading span {
+	
+	color: #8f8f8f;
+	font-size: 0.65em;
+	font-family: 'MyWebFont', Helvetica, sans-serif;
+	font-weight: 300;
+	display: block;
+	width: 98%;
+	top: 50%;
+	margin: 0 auto;
+	transform: translate(0, -50%);
+	-webkit-transform: translate(0, -50%);
+	-moz-transform: translate(0, -50%);
+	-o-transform: translate(0, -50%);
+	position: relative;
+}
+
+.adContents .adheading span#sponsText {
+	color: #ffffff;
+	font-size: 0.75em;
+	font-family: 'MyWebFont', Helvetica, sans-serif;
+	font-weight: 300;
+	display: block;
+	width: 98%;
+	top: 50%;
+	margin: 0 auto;
+	transform: translate(0, -50%);
+	-webkit-transform: translate(0, -50%);
+	-moz-transform: translate(0, -50%);
+	-o-transform: translate(0, -50%);
+	position: relative;
+}
+
+
+
+
+.adHalf .adContents .adtype {
+	color: #ccd2ec;
+	font-size: 0.8em;
+	font-family: 'MyWebFont', Helvetica, sans-serif;
+	font-weight: 300;
+	
+}
+
+.adVisual .lowerImg {
+	width: 100%;
+	height: 80px;
+	background: #ffffff;
+	position: absolute;
+	bottom: 35px;
+	
+}
+
+
+.adVisual .lowerImg img{
+	width: 70%;
+	height: 100%;
+	margin: 0 auto;
+	border: 0;
+}
+
+.bugdar {
+	height: 100%;
+	width: 46%;
+	margin: 0;
+	padding-left: 0px;
+	float: left;
+}
+
+.vidSymbol {
+	height: 50px;
+	width: 50px;
+	border-style: solid;
+	border-color: #ffffff;
+	border-width: 2px;
+	-moz-border-radius: 50%;
+	-webkit-border-radius: 50%;
+	-o-border-radius: 50%;
+	border-radius: 50%;
+	margin: 0 auto;
+	left: 50%;
+	top: 25%;
+	transform: translate(-50%, -50%);
+	-webkit-transform: translate(-50%, -50%);
+	-moz-transform: translate(-50%, -50%);
+	-o-transform: translate(-50%, -50%);
+	position: absolute;
+}
+
+.video_icon {
+	width: 60px;
+	height: 45px;
+	color: #ffffff;
+	font-size: 2.5em;
+	margin: 0 auto;
+	
+}

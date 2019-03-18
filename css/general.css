@@ -1,0 +1,442 @@
+@CHARSET "UTF-8";
+
+.halfBody {
+	width: 49%;
+	float: right;
+}
+
+.adVisual {
+	width: 100%;
+	height: 100%;
+	margin-top: 2%;  
+	background: #ffffff;
+}
+
+.adVisual .avby {
+	height: 640px;
+	width: 360px;
+	background: #dfe3e4;
+	-moz-border-radius:2px;
+	-webkit-border-radius:2px;
+	-o-border-radius:2px;
+	border-radius:2px;
+	float: left;
+
+}
+
+.adVisual .adfull .adContents {
+	height: 89%;
+}
+
+.adfull .adContentsCover {
+	width: 91%;
+	height: 85%;
+	left: 50%;
+	top: 20%;
+	transform: translate(-50%, -20%);
+	-webkit-transform: translate(-50%, -20%);
+	-moz-transform: translate(-50%, -20%);
+	-o-transform: translate(-50%, -20%);
+	position: relative;
+	border: 1px solid #ffffff;
+	position: relative;
+	-moz-border-radius:3px;
+	-webkit-border-radius:3px;
+	-o-border-radius:3px;
+	border-radius:3px;
+}
+
+.adVisual .adHalf .adContents {
+	height: 64%;
+}
+
+.adHalf .adContentsCover {
+	width: 99%;
+	height: 99%;
+	left: 50%;
+	top: 0;
+	transform: translate(-50%, 0);
+	-webkit-transform: translate(-50%, 0);
+	-moz-transform: translate(-50%, 0);
+	-o-transform: translate(-50%, 0);
+	position: relative;
+	border: 1px solid #ffffff;
+	position: relative;
+	-moz-border-radius:3px;
+	-webkit-border-radius:3px;
+	-o-border-radius:3px;
+	border-radius:3px;
+}
+
+.adHalf .adContents .adheading {
+	color: #8f8f8f;
+	font-size: 0.95em;
+	font-family: 'MyWebFont', Helvetica, sans-serif;
+	text-align: left;
+	margin-left: 5px;
+	font-weight: bold;
+}
+
+.adHalf .adContents .adtype {
+	color: #ccd2ec;
+	font-size: 0.95em;
+	font-family: 'MyWebFont', Helvetica, sans-serif;
+	font-weight: bold;
+	
+}
+
+.adHalf .adContents .adcontent span {
+	color: #8f8f8f;
+	font-size: 0.9em;
+	font-family: 'MyWebFont', Helvetica, sans-serif;
+	font-weight: 300;
+	text-align: left;
+	line-height: 16px;
+	display: block;
+	width: 100%;
+	margin-top: 5px;
+}
+
+.appsBack {
+	background: #f26365;
+}
+
+.close {
+	width: 20px;
+	height: 20px;
+	position: absolute;
+	left: 95%;
+	top: -2%;
+	background: #424242;
+}
+
+.close img {
+	width: 100%;
+	height: 100%;
+	margin-top: 0;
+}
+
+.imgBody span {
+	font-family: 'MyWebFont', Helvetica, sans-serif;
+	color: #ffffff;
+	display: block;
+}
+
+
+.sgAppBody {
+	width: 100%;
+	height: 23%;
+	border-bottom: 1px solid #ffffff;
+	margin: 0 auto;
+	text-align: left;
+	padding-top: 15px;
+}
+
+.sgAppBody span {
+	font-size: 0.8em;
+	font-family: 'MyWebFont', Helvetica, sans-serif;
+	font-weight: 300;
+	color: #ffffff;
+	margin-left: 4%;
+	margin-bottom: 10px;
+	display: block;
+	
+}
+
+.trimmer {
+	width: 95%;
+	height: 60%;
+	margin: 0 auto;
+	display: block;
+}
+
+ .appDetails {
+	width: 97%;
+	height: 27%;
+	margin: 0px auto 5px;
+}
+
+.appDetails .appText {
+	width: 92%;
+	height: 50%;
+	margin: 0 auto;
+	display: block;
+	float: none;
+	margin-top: 5px;
+}
+
+.appText span {
+	width: 50%;
+	margin-left: 5px;
+	float: left;
+}
+
+.appText .appProfile {
+	margin-top: 3px;
+}
+
+.contentText {
+	font-size: 0.65em;
+	text-align: left;
+	margin-bottom: 10px;
+	width: 95%;
+}
+
+.adVisual .adfull .adContents .imgBody img {
+	width: 100%;
+	height: 100%;
+	margin: 0 auto;
+	background-color: #8f8f8f;
+	display: block;
+}
+
+.bottomDetails {
+	width: 100%;
+	height: 30%;
+	border: 0;
+}
+
+.appImage {
+	width: 100%;
+	height: 75%;
+}
+
+.downloadBody {
+	height: 25px;
+	width: 25px;
+	border-style: solid;
+	border-color: #ffffff;
+	border-width: 2px;
+	-moz-border-radius: 50%;
+	-webkit-border-radius: 50%;
+	-o-border-radius: 50%;
+	border-radius: 50%;
+	margin: 0 auto;
+}
+
+.downText {
+	font-size: 0.6em;
+	
+}
+
+.download_icon {
+	width: 25px;
+	height: 20px;
+	color: #ffffff;
+	font-size: 1.5em;
+	margin: 0 auto;
+}
+
+.adContents .adlink a:link {
+
+	text-decoration: none;
+	font-size: 0.9em;
+	font-family: 'MyWebFont', Helvetica, sans-serif;
+	font-weight: bold;
+	color: #424242;
+	margin-left: 5px;
+	top: 50%;
+	transform: translate(0, -50%);
+	-webkit-transform: translate(0, -50%);
+	-moz-transform: translate(0, -50%);
+	-o-transform: translate(0, -50%);
+	position: relative;
+	
+}
+
+.adContents .adlink a:visited {
+	color: #424242;
+
+	}
+	
+h2.sponsHeader {
+	color: #424242;
+	font-size: 1em;
+	font-family: 'MyWebFont', Helvetica, sans-serif;
+	font-weight: bold;
+	margin: 0 auto 10%;
+	width: 60%;
+}
+
+span.unlockOption {
+	color: #424242;
+	font-size: 0.92em;
+	font-family: 'MyWebFont', Helvetica, sans-serif;
+	font-weight: 300;
+	margin: 5% 0 5% 5%;
+	display: block;
+
+}
+
+.sponsOptions {
+	width: 80%;
+	margin: 1% 0 0 5%;
+	text-align: left;
+}
+
+.sponsOptions label {
+	color: #424242;
+	font-size: 0.92em;
+	font-family: 'MyWebFont', Helvetica, sans-serif;
+	font-weight: 300;
+	margin-top: 5%;
+	width: 18%;
+	display: inline-block;
+	text-align: right;
+	
+}
+
+.sponsOptions .iradio_minimal-blue  {
+	margin-left: 0px;
+	margin-top: 2px;
+	
+}
+	
+#spons-top {
+	width: 100%;
+	height: 100%;
+	
+}
+
+.adVisual .adVisualTop img {
+	height: 100%;
+	width: 100%;
+}
+	
+	
+.adVTopFilter {
+	width: 100%;
+	height: 9%;
+}
+
+.adVTopFilter img {
+	width: 100%;
+	height: 100%;
+}
+
+.lowerBody {
+	width: 100%;
+	height: 15%;
+}
+
+.lowerBody img {
+	width: 100%;
+	height: 100%;
+}
+
+.adSponsBottom {
+	width: 100%;
+	height: 8%;
+	background: #ffffff;
+	bottom: 0;
+	position: absolute;
+}
+
+.adSponsBottom img {
+	height: 100%;
+	width: 100%;
+	
+}
+
+.sponsoredBox {
+	width: 99%;
+	height: 50px;
+	background: #e22627;
+	margin: 1% auto 0;
+}
+
+.sponsBoxText {
+	height: 100%;
+	width: 55%;
+	margin-left: 2%;
+	text-align: left;
+	float:left;
+}
+
+.sponsLogo {
+	height: 100%;
+	width: 40%;
+	margin-right: 2%;
+	text-align: right;
+	float:right;
+}
+
+.sponsLogo img {
+	height: 97%;
+	top: 50%;
+	transform: translate(0, -50%);
+	-webkit-transform: translate(0, -50%);
+	-moz-transform: translate(0, -50%);
+	-o-transform: translate(0, -50%);
+	position: relative;
+	
+}
+
+.sponsoredBox span {
+	color: #ffffff;
+	font-size: 1em;
+	font-family: 'MyWebFont', Helvetica, sans-serif;
+	font-weight: 300;
+	display: inline-block;
+	top: 50%;
+	transform: translate(0, -50%);
+	-webkit-transform: translate(0, -50%);
+	-moz-transform: translate(0, -50%);
+	-o-transform: translate(0, -50%);
+	position: relative;
+}
+
+.sponsoredBox span#sponsor {
+	font-weight: bold;
+	}
+	
+.UlsponsoredBox span {
+	color: #ffffff;
+	font-size: 1em;
+	font-family: 'MyWebFont', Helvetica, sans-serif;
+	font-weight: 300;
+	display: inline-block;
+	top: 50%;
+	transform: translate(0, -50%);
+	-webkit-transform: translate(0, -50%);
+	-moz-transform: translate(0, -50%);
+	-o-transform: translate(0, -50%);
+	position: relative;
+}
+
+.UlsponsoredBox span#sponsor {
+	font-weight: bold;
+	}
+
+.adSponsContents {
+	width: 100%;
+    height: 50%;
+}
+
+.UlsponsoredBox {
+	width: 100%;
+	height: 50px;
+	background: #f1592a;
+	margin: 1% auto 0;
+}
+
+.UladSponsContents {
+	width: 100%;
+	height: 63%;
+	margin: 1% auto 0;
+}
+
+.sponsMaintain {
+	width: 90%;
+	margin: 10% 0 0 5%;
+	text-align: center;
+}
+
+.sponsMaintain input {
+	margin: 0 auto;
+}
+
+#spnsAnchor {
+	display: block;
+	
+}

@@ -1,0 +1,221 @@
+@CHARSET "UTF-8";
+
+.inactiveLink {
+   pointer-events: none;
+   cursor: default;
+}
+
+h2 {
+	font-size: 1.18em;
+	font-family: 'MyWebFont', Helvetica, sans-serif;
+	font-weight: 300;
+	margin: 0 auto;
+	width: 100px;
+	margin-bottom: 15px;
+	margin-left: 170px;
+}
+
+h3 {
+	font-size: 1.02em;
+	font-family: 'MyWebFont', Helvetica, sans-serif;
+	font-weight: 300;
+	color: #807f7f;
+	text-align: center;
+}
+
+.select-image-type {
+	width: 200px;
+	margin: 0 auto;
+	line-height: 30px;
+}
+
+.select-image-type label {
+	font-size: 1.1em;
+	font-family: 'MyWebFont', Helvetica, sans-serif;
+	font-weight: 400;
+	margin: 5px 0 0px 15px;
+	display: inline-block;
+}
+
+.select-image-type input {
+	font-size: 0.9em;
+	font-family: 'MyWebFont', Helvetica, sans-serif;
+	font-weight: 300;
+	color: #ffffff;
+	margin-bottom: 30px;
+	
+}
+
+.select-image-type .iradio_minimal-blue  {
+	margin-top: -2px;
+}
+
+.select-image-type input[type="button"] {
+	background-color: #7ecaea;
+	-moz-border-radius:3px;
+	-webkit-border-radius:3px;
+	-o-border-radius:3px;
+	border-radius:3px;
+	width: 120px;
+	height: 35px;
+	border: 0;
+	margin-top: 15px;
+	cursor: pointer;
+	
+}
+
+.upWrapperss {
+	-moz-border-radius:3px;
+	-webkit-border-radius:3px;
+	-o-border-radius:3px;
+	border-radius:3px;
+	border: 1px solid #b3b3b3;
+	height: 125px;
+	width: 100%;
+	margin-bottom: 5px;
+}
+
+#filterBody .headWth input[type="text"] {
+	background: #ecedef;
+	font-size: 0.72em;
+	font-family: 'MyWebFont', Helvetica, sans-serif;
+	font-weight: 300;
+	-moz-border-radius:3px;
+	-webkit-border-radius:3px;
+	-o-border-radius:3px;
+	border-radius:3px;
+	border: 1px solid #5dbde5;
+	padding-left: 10px;
+	width: 50%;
+	height: 20px;
+	margin-left: 25px;
+	margin-top: 10px;
+	color: #969595;
+	display: inline-block;
+}
+
+#filterBody p {
+	color: #7f7f7f;
+	font-size: 0.7em;
+	font-family: 'MyWebFont', Helvetica, sans-serif;
+	font-weight: 300;
+	margin-left: 10px;
+}
+
+.upwids {
+	background: #ecedef;
+	font-size: 0.72em;
+	font-family: 'MyWebFont', Helvetica, sans-serif;
+	font-weight: 300;
+	-moz-border-radius:3px;
+	-webkit-border-radius:3px;
+	-o-border-radius:3px;
+	border-radius:3px;
+	border: 1px solid #5dbde5;
+	padding-left: 10px;
+	width: 70%;
+	margin-left: 25px;
+	margin-top: 10px;
+	color: #969595;
+	height: 60px;
+}
+
+#filterBody span.charNums {
+	font-size: 0.65em;
+	font-family: 'MyWebFont', Helvetica, sans-serif;
+	font-weight: 300;
+	color: #7f7f7f;
+	margin-left: 40px;
+	display: block;
+	float: left;
+	margin-top: 2px;
+}
+
+#filterBody span.halfcontentCharNumValue {
+	font-size: 0.65em;
+	font-family: 'MyWebFont', Helvetica, sans-serif;
+	font-weight: 300;
+	color: #7f7f7f;
+	display: block;
+	float: left;
+	margin-top: 2px;
+}
+
+#filterBody span.charNum {
+	font-size: 0.65em;
+	font-family: 'MyWebFont', Helvetica, sans-serif;
+	font-weight: 300;
+	color: #7f7f7f;
+	display: inline-block;
+}
+
+#filterBody span.halfcharNumValue {
+	font-size: 0.65em;
+	font-family: 'MyWebFont', Helvetica, sans-serif;
+	font-weight: 300;
+	color: #7f7f7f;
+	display: inline-block;
+}
+
+#filterBody span.fullcharNumValue {
+	font-size: 0.65em;
+	font-family: 'MyWebFont', Helvetica, sans-serif;
+	font-weight: 300;
+	color: #7f7f7f;
+	display: inline-block;
+}
+
+
+.half_content a#spBox {
+	padding: 5px;
+	font-size: 0.8em;
+	font-family: 'MyWebFont', Helvetica, sans-serif;
+	font-weight: 300;
+	text-decoration: none;
+	text-align: center;
+	margin-left: 25px;
+	display: block;
+	width: 50%;
+	-moz-border-radius:3px;
+	-webkit-border-radius:3px;
+	-o-border-radius:3px;
+	border-radius:3px;
+}
+
+#filterBody .half_content .optionHead {
+	font-size: 0.75em;
+	font-family: 'MyWebFont', Helvetica, sans-serif;
+	font-weight: 300;
+	color: #424242;
+	margin-left: 35%;
+	margin-bottom: 5px;
+	display: block
+}
+
+.adVisual {
+	width: 100%;
+	height: 100%;
+	margin-top: 25%;  
+	background: #ffffff;
+}
+
+.adVisual .avby {
+	height: 470px;
+	width: 260px;
+	background: #dfe3e4;
+	-moz-border-radius:2px;
+	-webkit-border-radius:2px;
+	-o-border-radius:2px;
+	border-radius:2px;
+	float: left;
+
+}
+
+.adVisual .adfull {
+	opacity: 1;
+}
+
+.adVisual .adHalf {
+	
+	opacity: 0.4;
+}

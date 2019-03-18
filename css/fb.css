@@ -1,0 +1,43 @@
+@CHARSET "UTF-8";
+
+.appsBack {
+	background: #ffffff;
+}
+
+.sgAppBody span {
+	color: #818181;
+	
+}
+
+.sgAppBody {
+
+	border-bottom: 1px solid #cac6c7;
+}
+
+.bottomDetails {
+	background: #edf1f2;
+	height: 32%;
+}
+
+.adContents .adlink {
+	border-top: 1px solid #cac6c7;
+	
+}
+
+.bottomDetails .download img#fbLike {
+	width: 80%;
+	height: 15px;
+	margin-right: 15px;
+	top: 35%;
+	transform: translate(0, -35%);
+	-webkit-transform: translate(0, -35%);
+	-moz-transform: translate(0, -50%);
+	-o-transform: translate(0, -50%);
+	position: relative;
+}
+
+.imgBody span {
+	font-family: 'MyWebFont', Helvetica, sans-serif;
+    display: block;
+    color: #818181;
+}

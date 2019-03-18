@@ -1,0 +1,33 @@
+@CHARSET "UTF-8";
+
+.formContainer {
+	width: 87%;
+	height: 100%;
+	float: left;
+}
+
+#content #formBody {
+	width: 100%;
+	height: 1000px;
+	margin: 0 auto;
+}
+
+
+.ftrbgrp {
+	margin-top: 85%;
+}
+
+.comingSoon {
+	font-family: 'MyWebFont', Helvetica, sans-serif;
+	font-size: 1.1em;
+	font-weight: 300;
+	color: #656766;
+	display: block;
+	width: 97%;
+	margin: 30px auto 0px;
+	text-align: center;
+}
+
+.cmSoonText {
+	color: #5ebee6;
+}

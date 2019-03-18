@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Seeka</title>
+<link rel="styleSheet" href="css/styles.css" type="text/css" media="screen" />
+<link rel="styleSheet" href="css/global.css" type="text/css" media="screen" />
+<link rel="styleSheet" href="css/profile.css" type="text/css" media="screen" />
+
+</head>
+<body>
+<div id="Container">
+	<div class="header">
+		<div class="menu_bar">
+			<div class="logo">
+				<img alt="Seeka Logo" src="images/seeka.png">
+			</div>
+			
+			<div class="userDetails">	
+				<div class="profileImg"></div>
+				<div class="profileDetails">
+					<span>Name</span> <br>
+					<span>example@gmail.com</span><br>
+					<a href="#" class="link_decoration">My Profile</a>
+				</div>
+				
+			</div>
+		</div>
+	</div>
+	<div class="title_content">
+		<div class="backButton"><a href="home.html"><img src="images/icon/back_button.png"></a></div>
+		<div class="billing_info">
+			<span>Profile</span>
+		</div>
+		
+		<div class="ad_creation">
+			<a href="budgetco.html" class="btntme">Create Ad</a>
+		</div>
+			
+	</div>
+	<div id="profViewcontent">
+		<hr>
+		<div id="sidemenuBar">
+			<ul>
+				<li class="ad-activity-icon">
+					<a href="ad-activity.html">
+						<img src="images/icon/ad-activity-menu.png"><br>
+						<span>Ad Activity</span>
+					</a>
+				</li>
+				<li class="profile-icon">
+					<a href="profile-view.html">
+						<img src="images/icon/user-menu.png">
+						<span>Profile</span>
+					</a>
+				</li>
+				<li class="groups-icon">
+					<a href="groups.html">
+						<img src="images/icon/group-menu.png">
+						<span>Groups</span>
+					</a>
+				</li>
+				<li class="billing-icon">
+					<a href="billing-info-view.html">
+						<img src="images/icon/billing-menu.png">
+						<span>Billing</span>
+					</a>
+				</li>
+				<li class="settings-icon">
+					<a href="#">
+						<img src="images/icon/settings-menu.png">
+						<span>Settings</span>
+					</a>
+				</li>
+				<li class="security-icon">
+					<a href="security.html">
+						<img src="images/icon/security-menu.png">
+						<span>Security</span>
+					</a>
+				</li>
+			</ul>
+		</div>
+		<div class="formContainer">
+		<div id="formBody">
+			<form method="post" action="" id="profileForm">
+			
+				<div id="profileLogo">
+					<div class="profileLogoImg"></div>
+				</div>
+				
+				<div id="companyBody">
+					<div class="billingContactTitles">
+						<h3>Company Information</h3>
+						<span class="editLink"><a href="profile-edit.html">Edit</a></span>
+					</div>
+					
+					<hr>
+					
+					<div class="companyContainer bgprar">
+						
+						<div class="profileLeftColumn">	
+							<label class="biv">Company Name: </label><span class="compnameValue values"></span><br />
+							<label class="biv">Alias: </label><span class="aliasValue values"></span><br />
+							<label class="biv">Registration ID: </label><span class="regIdValue values"></span><br />
+							<label class="biv">Employee Count: </label><span class="empCountValue values"></span><br />
+						</div>
+						
+						<div class="profileRightColumn">
+							<label class="biv">Website: </label><span class="websiteValue values"></span><br />
+							<label class="biv">Phone Number: </label><span class="phoneNoValue values"></span><br />
+							<label class="biv">Mobile Number: </label><span class="mobileNoValue values"></span><br />
+							<label class="biv">Fax Number: </label><span class="faxNoValue values"></span><br />
+						</div>
+						
+					</div>
+					
+				</div>
+				
+				<div id="addressBody">
+					<h3>Address</h3>
+					<hr>
+					
+					<div class="addressContainer nmprar">
+						
+						<div class="profileLeftColumn">	
+							<label class="biv">Country: </label><span class="ctryValue values"></span><br />
+							<label class="biv">City: </label><span class="cityValue values"></span><br />
+							<label class="biv">State: </label><span class="stateValue values"></span><br />
+						</div>
+						
+						<div class="profileRightColumn">
+							<label class="biv">No </label><span class="addyNoValue values"></span><br />
+							<label class="biv">Street </label><span class="streetValue values"></span><br />
+							<label class="biv">ZIP / Postcode </label><span class="zipValue values"></span><br />
+						</div>
+						
+					</div>
+				</div>
+				
+				<div id="contactBody">
+				
+					<h3>Contact Person</h3>
+					<hr>
+					
+					<div class="companyContainer bgprar">
+						
+						<div class="profileLeftColumn">	
+							<label class="biv">Title: </label><span class="titleValue values"></span><br />
+							<label class="biv">Name: </label><span class="conNameValue values"></span><br />
+							<label class="biv">Position: </label><span class="positionValue values"></span><br />
+							<label class="biv">Department: </label><span class="dptValue values"></span><br />
+						</div>
+						
+						<div class="profileRightColumn">
+							<label class="biv">Email: </label><span class="emailValue values"></span><br />
+							<label class="biv">Phone:  </label><span class="conPhoneValue values"></span><br />
+							<label class="biv">Mobile:  </label><span class="conMobileValue values"></span><br />
+							<label class="biv">Skype ID: </label><span class="skypeValue values"></span><br />
+						</div>
+						
+					</div>
+				
+				</div>
+			
+			</form>
+			
+			<div class="footer">
+				<div class="footer_links"> 
+					<p><a href="#">2015 Seeka</a>-<a href="#">Cookies, Privacy and Terms</a>-<a href="#">Contact</a></p>
+				</div> 
+			</div>
+		</div>
+	</div>
+	</div>
+</div>
+</body>
+</html>

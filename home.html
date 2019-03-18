@@ -1,0 +1,618 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Seeka</title>
+<link rel="styleSheet" href="css/styles.css" type="text/css" media="screen" />
+<link rel="styleSheet" href="css/global.css" type="text/css" media="screen" />
+<link rel="styleSheet" href="css/profile.css" type="text/css" media="screen" />
+<link rel="styleSheet" href="css/home.css" type="text/css" media="screen" />
+<link rel="styleSheet" href="css/easter-egg.css" type="text/css" media="screen" />
+<link href="css/billing_selector.css" rel="stylesheet">
+
+<script type="text/javascript" src="js/jquery-1.11.3.js"></script>
+<script type="text/javascript" src="js/jquery.mCustomScrollbar.js"></script>
+
+<script>
+$(document).ready(function(){
+	$('.notificationContent').mCustomScrollbar({
+		theme: 'dark-2'
+	});
+	
+});
+</script>
+
+<script>
+$(document).ready(function(){
+	$('#AdsTable').find("tbody tr").each(function() {
+	    var adStatus = $(this).find("td:eq(6)").html(); 
+	    
+	    if(adStatus == "Active") {
+	    	$(this).find("td:eq(6)").css("color", "#08974b");
+	    }
+	    
+	    if(adStatus == "Paused") {
+	    	$(this).find("td:eq(6)").css("color", "#fcb041");
+	    }
+	    
+	    if(adStatus == "Limit Reached") {
+	    	$(this).find("td:eq(6)").css("color", "#be202e");
+	    }
+	});
+});
+</script>
+
+</head>
+<body>
+<div id="Container">
+	<div class="header">
+		<div class="menu_bar">
+			<div class="logo">
+				<img alt="Seeka Logo" src="images/seeka.png">
+			</div>
+			
+			<div class="userDetails">	
+				<div class="profileImg"></div>
+				<div class="profileDetails">
+					<span>Name</span> <br>
+					<span>example@gmail.com</span><br>
+					<a href="#" class="link_decoration">My Profile</a>
+				</div>
+				
+			</div>
+		</div>
+	</div>
+	<div class="title_content">
+		
+		<div class="billing_infoTitle">
+			<span>HomePage</span>
+		</div>
+		
+		<div class="ad_creation">
+			<a href="budgetco.html" class="btntme">Create Ad</a>
+		</div>
+			
+	</div>
+	<div id="content">
+		<hr>
+		<div id="sidemenuBar">
+				<ul>
+				<li class="ad-activity-icon">
+					<a href="ad-activity.html">
+						<img src="images/icon/ad-activity-menu.png"><br>
+						<span>Ad Activity</span>
+					</a>
+				</li>
+				<li class="profile-icon">
+					<a href="profile-view.html">
+						<img src="images/icon/user-menu.png">
+						<span>Profile</span>
+					</a>
+				</li>
+				<li class="groups-icon">
+					<a href="groups.html">
+						<img src="images/icon/group-menu.png">
+						<span>Groups</span>
+					</a>
+				</li>
+				<li class="billing-icon">
+					<a href="billing-info-view.html">
+						<img src="images/icon/billing-menu.png">
+						<span>Billing</span>
+					</a>
+				</li>
+				<li class="settings-icon">
+					<a href="#">
+						<img src="images/icon/settings-menu.png">
+						<span>Settings</span>
+					</a>
+				</li>
+				<li class="security-icon">
+					<a href="security.html">
+						<img src="images/icon/security-menu.png">
+						<span>Security</span>
+					</a>
+				</li>
+			</ul>
+		</div>
+		<div class="homeContent">
+			
+			<div class="homeBody">
+			
+				<div id="topSegment">
+				
+					<h2>OVERVIEW</h2>
+					
+					<div class="performance">
+						<div class="perfBody">
+							<div class="perfImage inper">
+								<img src="images/growth.png">
+							</div>
+							<div class="perfDetails inpers">
+								<div class="perfValue"><span>60%</span></div>
+								<div class="perfResult"><span>Growth</span></div>
+							</div>
+						</div>
+					</div>
+					
+					<div class="performance sper">
+						<div class="perfBody">
+							<div class="perfImage inper">
+								<img src="images/adcount.png">
+							</div>
+							<div class="perfDetails inpers">
+								<div class="perfValue"><span>25</span></div>
+								<div class="perfResult"><span>Ad Count</span></div>
+							</div>
+						</div>
+					</div>
+					
+					<div class="performance sper">
+						<div class="perfBody">
+							<div class="perfImage inper">
+								<img src="images/cpcspent.png">
+							</div>
+							<div class="perfDetails inpers">
+								<div class="perfValue"><span>1245</span></div>
+								<div class="perfResult"><span>CPC Spent</span></div>
+							</div>
+						</div>
+					</div>
+					
+					<div class="performance sper">
+						<div class="perfBody">
+							<div class="perfImage inper">
+								<img src="images/missedop.png">
+							</div>
+							<div class="perfDetails inpers">
+								<div class="perfValue"><span>800</span></div>
+								<div class="perfResult"><span>Missed Opp</span></div>
+							</div>
+						</div>
+					</div>
+					
+				</div>
+				<div id="bottomSegment">
+					<div class="weeklyContainer">
+						<h2>WEEKLY BREAKDOWN</h2>
+						
+						<div class="weeklyBody">
+							<div class="weeklyContent">
+								<div class="chartContainer inper">
+									<img src="images/graph.png">
+								</div>
+								<div class="weeklyInfo inper">
+									<p>Number Of Users Unlocked Your Courses</p>
+									<p>Number Of Users Enrolled To Your Institution</p>
+									<p>Popularity Rate Of Your Institutions</p>
+								</div>
+								
+								<div class="weeklyPercentage inper">
+									<div class="percentageValue">
+										<span>13%</span>
+									</div>
+									<div class="increasedText">
+										<span>Increased</span>
+									</div>
+									
+									<div class="percentageValue">
+										<span>15%</span>
+									</div>
+									<div class="increasedText">
+										<span>Increased</span>
+									</div>
+									
+									<div class="percentageValue">
+										<span>14%</span>
+									</div>
+									<div class="increasedText">
+										<span>Increased</span>
+									</div>
+								</div>
+							</div>
+						</div>
+						
+						<div class="tableBody">
+							<table id="AdsTable">
+								<thead>
+									<tr>
+										<th> </th>
+										<th>Advertisement</th>
+										<th>Type of Ad</th>
+										<th>Created On</th>
+										<th>Budget</th>
+										<th>Views</th>
+										<th>Status</th>
+										<th> </th>
+									</tr>
+								</thead>
+								<tbody>
+									
+									 <tr>
+									 	 <td> </td>
+									     <td class="firstTableCol">Internship Advertising/Marketing</td>
+									     <td>Home Page</td>
+									     <td>Sep 30</td>
+									     <td>$ 30</td>
+									     <td>300</td>
+									     <td>Active</td>
+									     <td> </td>
+								    </tr>
+								    
+								     <tr>
+								     	 <td> </td>
+									     <td class="firstTableCol">Internship Advertising/Marketing</td>
+									     <td>Locked Screen</td>
+									     <td>Sep 30</td>
+									     <td>$ 0</td>
+									     <td>30 000</td>
+									     <td>Limit Reached</td>
+									     <td> </td>
+								    </tr>
+								    
+								    <tr>
+								    	 <td> </td>
+									     <td class="firstTableCol">Internship Advertising/Marketing</td>
+									     <td>Pop Ups</td>
+									     <td>Sep 30</td>
+									     <td>$ 0</td>
+									     <td>20 000</td>
+									     <td>Paused</td>
+									     <td> </td>
+								    </tr>
+								    
+								     <tr class="weeklyTablerow">
+								     	 <td> </td>
+									     <td class="firstTableCol">Internship Advertising/Marketing</td>
+									     <td>Buy Credits</td>
+									     <td>Sep 29</td>
+									     <td>$ 0</td>
+									     <td>20 000</td>
+									     <td>Paused</td>
+									     <td> </td>
+								    </tr>
+								    
+								     <tr class="weeklyTablerow">
+								     	 <td> </td>
+									     <td class="firstTableCol">Internship Advertising/Marketing</td>
+									     <td>Pop Ups</td>
+									     <td>Sep 29</td>
+									     <td>$ 100</td>
+									     <td>80 000</td>
+									     <td>Active</td>
+									     <td> </td>
+								    </tr>
+								    
+								</tbody>
+							</table>
+						</div>
+					</div>
+					<div class="notificationContainer">
+						<h2>NOTIFICATION</h2>
+						
+						<div class="notificationBody">
+						
+							<div id="content-1" class="notificationContent content">
+								<ul class="notificationDetails">
+									<li>
+										<div class="notifyImage">
+											<img src="images/notification.png">
+										</div>
+										<div class="notifyInfo">
+										
+											<a href="#">	
+												<span class="notifyText">Three courses unlocked today.</span>
+												<span class="notifyDate">Wed 9:00a.m</span>
+											</a>
+											
+										</div>
+									</li>
+									
+									<li>
+										<div class="notifyImage">
+											<img src="images/notification.png">
+										</div>
+										<div class="notifyInfo">
+										
+											<a href="#">	
+												<span class="notifyText">App's Updates.</span>
+												<span class="notifyDate">17 Nov 12:00a.m</span>
+											</a>
+											
+										</div>
+									</li>
+									
+									<li>
+										<div class="notifyImage">
+											<img src="images/notification.png">
+										</div>
+										<div class="notifyInfo">
+										
+											<a href="#">	
+												<span class="notifyText">700 000 new users have joined the app.</span>
+												<span class="notifyDate">14 Nov 12:00a.m</span>
+											</a>
+											
+										</div>
+									</li>
+									
+									<li>
+										<div class="notifyImage">
+											<img src="images/notification.png">
+										</div>
+										<div class="notifyInfo">
+											<a href="#">	
+												<span class="notifyText">7 Students have purchased self-enrolment...</span>
+												<span class="notifyDate">8 Nov 12:00a.m</span>
+											</a>
+											
+										</div>
+									</li>
+									
+									<li>
+										<div class="notifyImage">
+											<img src="images/notification.png">
+										</div>
+										<div class="notifyInfo">
+										
+											<a href="#">	
+												<span class="notifyText">Five courses unlocked today.</span>
+												<span class="notifyDate">2 Nov 12:00a.m</span>
+											</a>
+											
+										</div>
+									</li>
+									
+									<li>
+										<div class="notifyImage">
+											<img src="images/notification.png">
+										</div>
+										<div class="notifyInfo">
+										
+											<a href="#">	
+												<span class="notifyText">Seven courses unlocked today.</span>
+												<span class="notifyDate">17 Oct 10:00a.m</span>
+											</a>
+											
+										</div>
+									</li>
+									
+									<li>
+										<div class="notifyImage">
+											<img src="images/notification.png">
+										</div>
+										<div class="notifyInfo">
+										
+											<a href="#">	
+												<span class="notifyText">12 students have purchased self enrolment...</span>
+												<span class="notifyDate">7 Oct 12:00a.m</span>
+											</a>
+											
+										</div>
+									</li>
+									
+									<li>
+										<div class="notifyImage">
+											<img src="images/notification.png">
+										</div>
+										<div class="notifyInfo">
+										
+											<a href="#">	
+												<span class="notifyText">Three courses unlocked today.</span>
+												<span class="notifyDate">30 Sep 11:00a.m</span>
+											</a>
+										</div>
+									</li>
+									
+									<li>
+										<div class="notifyImage">
+											<img src="images/notification.png">
+										</div>
+										<div class="notifyInfo">
+											<a href="#">	
+												<span class="notifyText">Four courses unlocked today</span>
+												<span class="notifyDate">18 Sep 12:00a.m</span>
+											</a>
+										</div>
+									</li>
+									
+									<li>
+										<div class="notifyImage">
+											<img src="images/notification.png">
+										</div>
+										<div class="notifyInfo">
+										
+											<a href="#">	
+												<span class="notifyText">19 students have purchased self enrolment...</span>
+												<span class="notifyDate">11 Sep 12:00a.m</span>
+											</a>
+										
+										</div>
+									</li>
+									
+									<li>
+										<div class="notifyImage">
+											<img src="images/notification.png">
+										</div>
+										<div class="notifyInfo">
+										
+											<a href="#">	
+												<span class="notifyText">19 students have purchased self enrolment...</span>
+												<span class="notifyDate">11 Sep 12:00a.m</span>
+											</a>
+										
+										</div>
+									</li>
+									
+									<li>
+										<div class="notifyImage">
+											<img src="images/notification.png">
+										</div>
+										<div class="notifyInfo">
+										
+											<a href="#">	
+												<span class="notifyText">19 students have purchased self enrolment...</span>
+												<span class="notifyDate">11 Sep 12:00a.m</span>
+											</a>
+										
+										</div>
+									</li>
+									
+									<li>
+										<div class="notifyImage">
+											<img src="images/notification.png">
+										</div>
+										<div class="notifyInfo">
+										
+											<a href="#">	
+												<span class="notifyText">19 students have purchased self enrolment...</span>
+												<span class="notifyDate">11 Sep 12:00a.m</span>
+											</a>
+										
+										</div>
+									</li>
+									
+									<li>
+										<div class="notifyImage">
+											<img src="images/notification.png">
+										</div>
+										<div class="notifyInfo">
+										
+											<a href="#">	
+												<span class="notifyText">19 students have purchased self enrolment...</span>
+												<span class="notifyDate">11 Sep 12:00a.m</span>
+											</a>
+										
+										</div>
+									</li>
+									
+									<li>
+										<div class="notifyImage">
+											<img src="images/notification.png">
+										</div>
+										<div class="notifyInfo">
+										
+											<a href="#">	
+												<span class="notifyText">19 students have purchased self enrolment...</span>
+												<span class="notifyDate">11 Sep 12:00a.m</span>
+											</a>
+										
+										</div>
+									</li>
+									
+									<li>
+										<div class="notifyImage">
+											<img src="images/notification.png">
+										</div>
+										<div class="notifyInfo">
+										
+											<a href="#">	
+												<span class="notifyText">19 students have purchased self enrolment...</span>
+												<span class="notifyDate">11 Sep 12:00a.m</span>
+											</a>
+										
+										</div>
+									</li>
+									
+									<li>
+										<div class="notifyImage">
+											<img src="images/notification.png">
+										</div>
+										<div class="notifyInfo">
+										
+											<a href="#">	
+												<span class="notifyText">19 students have purchased self enrolment...</span>
+												<span class="notifyDate">11 Sep 12:00a.m</span>
+											</a>
+										
+										</div>
+									</li>
+									
+									<li>
+										<div class="notifyImage">
+											<img src="images/notification.png">
+										</div>
+										<div class="notifyInfo">
+										
+											<a href="#">	
+												<span class="notifyText">19 students have purchased self enrolment...</span>
+												<span class="notifyDate">11 Sep 12:00a.m</span>
+											</a>
+										
+										</div>
+									</li>
+									
+									<li>
+										<div class="notifyImage">
+											<img src="images/notification.png">
+										</div>
+										<div class="notifyInfo">
+										
+											<a href="#">	
+												<span class="notifyText">19 students have purchased self enrolment...</span>
+												<span class="notifyDate">11 Sep 12:00a.m</span>
+											</a>
+										
+										</div>
+									</li>
+									
+									<li>
+										<div class="notifyImage">
+											<img src="images/notification.png">
+										</div>
+										<div class="notifyInfo">
+										
+											<a href="#">	
+												<span class="notifyText">19 students have purchased self enrolment...</span>
+												<span class="notifyDate">11 Sep 12:00a.m</span>
+											</a>
+										
+										</div>
+									</li>
+									
+									<li>
+										<div class="notifyImage">
+											<img src="images/notification.png">
+										</div>
+										<div class="notifyInfo">
+										
+											<a href="#">	
+												<span class="notifyText">19 students have purchased self enrolment...</span>
+												<span class="notifyDate">11 Sep 12:00a.m</span>
+											</a>
+										
+										</div>
+									</li>
+									
+									<li>
+										<div class="notifyImage">
+											<img src="images/notification.png">
+										</div>
+										<div class="notifyInfo">
+										
+											<a href="#">	
+												<span class="notifyText">19 students have purchased self enrolment...</span>
+												<span class="notifyDate">11 Sep 12:00a.m</span>
+											</a>
+										
+										</div>
+									</li>
+								</ul>
+							</div>
+						</div>
+					</div>	
+				</div>
+				
+				<div class="footer">
+					<div class="footer_links"> 
+						<p><a href="#">2015 Seeka</a>-<a href="#">Cookies, Privacy and Terms</a>-<a href="#">Contact</a></p>
+					</div> 
+				</div>
+			
+			</div>
+			
+		</div>
+	</div>
+</div>
+</body>
+</html>

@@ -1,0 +1,788 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Seeka</title>
+<link rel="styleSheet" href="css/styles.css" type="text/css" media="screen" />
+<link rel="styleSheet" href="css/global.css" type="text/css" media="screen" />
+<link rel="styleSheet" href="css/profile.css" type="text/css" media="screen" />
+<link rel="styleSheet" href="css/home.css" type="text/css" media="screen" />
+<link rel="styleSheet" href="css/packages.css" type="text/css" media="screen" />
+<link href="css/billing_selector.css" rel="stylesheet">
+
+<script type="text/javascript" src="js/jquery-1.11.3.js"></script>
+<script type="text/javascript" src="js/jquery.mCustomScrollbar.js"></script>
+
+<script type="text/javascript" charset="utf-8">
+  $(document).ready(function() {
+    
+	  /****
+	  Home Page Package Selection
+	  
+	  ****/
+	   $('#likeHomeImage').click(function() {
+	    	 $("#likeHomeImage .heart").attr('src', 'images/icon/heart.png');
+	    	 $("#likeHomeVideo .heart").attr('src', 'images/icon/stroke.png');
+	    	 
+	    	 $('#homeContinue').prop("href", "home-image.html");
+	    	
+	    	 return false;
+	        
+	   });
+	    
+	   $('#likeHomeVideo').click(function() {
+    	 	$("#likeHomeVideo .heart").attr('src', 'images/icon/heart.png');
+    	 	$("#likeHomeImage .heart").attr('src', 'images/icon/stroke.png');
+    	 	
+    	 	$('#homeContinue').prop("href", "home-video.html");
+    	 	
+	        return false;
+	  });
+	   
+	   /****
+		  Pop Up Package Selection
+		  
+		  ****/
+	   
+	   $('#likepopFull').click(function() {
+	    	 $("#likepopFull .heart").attr('src', 'images/icon/heart.png');
+	    	 $("#likepopHalf .heart").attr('src', 'images/icon/stroke.png');
+	    	 $("#likepopFb .heart").attr('src', 'images/icon/stroke.png');
+	   	 	 $("#likepopInApp .heart").attr('src', 'images/icon/stroke.png');
+	   	 	 
+	   	 	$('#popupContinue').prop("href", "company.html");
+	   	 	
+	    	 return false;
+	        
+	   });
+	    
+	   $('#likepopHalf').click(function() {
+	  	 	$("#likepopHalf .heart").attr('src', 'images/icon/heart.png');
+	  	 	$("#likepopFull .heart").attr('src', 'images/icon/stroke.png');
+	  	 	$("#likepopFb .heart").attr('src', 'images/icon/stroke.png');
+	  	 	$("#likepopInApp .heart").attr('src', 'images/icon/stroke.png');
+	  	 	
+	  	 	$('#popupContinue').prop("href", "company.html");
+	  	 	
+	        return false;
+	  });
+	   
+	   
+	   $('#likepopFb').click(function() {
+	  	 	$("#likepopFb .heart").attr('src', 'images/icon/heart.png');
+	  	 	$("#likepopFull .heart").attr('src', 'images/icon/stroke.png');
+	  	 	$("#likepopHalf .heart").attr('src', 'images/icon/stroke.png');
+	  	 	$("#likepopInApp .heart").attr('src', 'images/icon/stroke.png');
+	  	 	
+	  	 	$('#popupContinue').prop("href", "fb-upload.html");
+	  	 	
+		   return false;
+	  });
+	   
+   	  $('#likepopInApp').click(function() {
+	  	 	$("#likepopInApp .heart").attr('src', 'images/icon/heart.png');
+	  	 	$("#likepopFb .heart").attr('src', 'images/icon/stroke.png');
+	  	 	$("#likepopHalf .heart").attr('src', 'images/icon/stroke.png');
+	  	 	$("#likepopFull .heart").attr('src', 'images/icon/stroke.png');
+	  	 	
+	  	 	$('#popupContinue').prop("href", "apps.html");
+	  	 	
+		    return false;
+	  });
+   	  
+   	/****
+	  Buy Credits Package Selection
+	  
+	  ****/
+   
+	   $('#likecreditsSurvey').click(function() {
+	    	 $("#likecreditsSurvey .heart").attr('src', 'images/icon/heart.png');
+	    	 $("#likecreditsInApps .heart").attr('src', 'images/icon/stroke.png');
+	    	 $("#likecreditsVideo .heart").attr('src', 'images/icon/stroke.png');
+	    	 
+	    	 $('#creditsContinue').prop("href", "survey.html");
+	    	 
+	    	 return false;
+	        
+	   });
+	    
+	   $('#likecreditsInApps').click(function() {
+		 	$("#likecreditsInApps .heart").attr('src', 'images/icon/heart.png');
+		 	$("#likecreditsVideo .heart").attr('src', 'images/icon/stroke.png');
+		 	$("#likecreditsSurvey .heart").attr('src', 'images/icon/stroke.png');
+		 	
+		 	
+		 	$('#creditsContinue').prop("href", "install-apps.html");
+		 	
+	        return false;
+	  });
+	   
+	   
+	   $('#likecreditsVideo').click(function() {
+	  	 	$("#likecreditsVideo .heart").attr('src', 'images/icon/heart.png');
+	  	 	$("#likecreditsInApps .heart").attr('src', 'images/icon/stroke.png');
+	  	 	$("#likecreditsSurvey .heart").attr('src', 'images/icon/stroke.png');
+	  	 	
+	  	 	$('#creditsContinue').prop("href", "watch-video.html");
+	  	 	
+		    return false;
+	  });
+	   
+	   /****
+		  Locked Screen Package Selection
+		  
+		  ****/
+	   
+	   $('#likeLockedspons').click(function() {
+	    	 $("#likeLockedspons .heart").attr('src', 'images/icon/heart.png');
+	    	 $("#likeUnlockedspons .heart").attr('src', 'images/icon/stroke.png');
+	    	 $("#likelockedHalf .heart").attr('src', 'images/icon/stroke.png');
+	   	 	 $("#likelockedFull .heart").attr('src', 'images/icon/stroke.png');
+	   	  	 $("#likelockedVideo .heart").attr('src', 'images/icon/stroke.png');
+	   	 	 $("#likelockedEegg .heart").attr('src', 'images/icon/stroke.png');
+	   	 	 $("#likeUnlockedEegg .heart").attr('src', 'images/icon/stroke.png');
+	   	 	 
+	   	     $('#lockedContinue').prop("href", "sponsored-locked.html");
+	   	 	
+	    	return false;
+	        
+	   });
+	    
+	   $('#likeUnlockedspons').click(function() {
+		     $("#likeUnlockedspons .heart").attr('src', 'images/icon/heart.png');
+	    	 $("#likeLockedspons .heart").attr('src', 'images/icon/stroke.png');
+	    	 $("#likelockedHalf .heart").attr('src', 'images/icon/stroke.png');
+	   	 	 $("#likelockedFull .heart").attr('src', 'images/icon/stroke.png');
+	   	  	 $("#likelockedVideo .heart").attr('src', 'images/icon/stroke.png');
+	   	 	 $("#likelockedEegg .heart").attr('src', 'images/icon/stroke.png');
+	   	 	 $("#likeUnlockedEegg .heart").attr('src', 'images/icon/stroke.png');
+	   	 	 
+	   	 	 $('#lockedContinue').prop("href", "sponsored-unlocked.html");
+	   	 	
+	        return false;
+	  });
+	   
+	   
+	   $('#likelockedHalf').click(function() {
+		     $("#likelockedHalf .heart").attr('src', 'images/icon/heart.png');
+	    	 $("#likeLockedspons .heart").attr('src', 'images/icon/stroke.png');
+	    	 $("#likeUnlockedspons .heart").attr('src', 'images/icon/stroke.png');
+	   	 	 $("#likelockedFull .heart").attr('src', 'images/icon/stroke.png');
+	   	  	 $("#likelockedVideo .heart").attr('src', 'images/icon/stroke.png');
+	   	 	 $("#likelockedEegg .heart").attr('src', 'images/icon/stroke.png');
+	   	 	 $("#likeUnlockedEegg .heart").attr('src', 'images/icon/stroke.png');
+	   	 	 
+	   	 	 $('#lockedContinue').prop("href", "company.html");
+	   	 	
+		    return false;
+	  });
+	   
+	  $('#likelockedFull').click(function() {
+		     $("#likelockedFull .heart").attr('src', 'images/icon/heart.png');
+	    	 $("#likeLockedspons .heart").attr('src', 'images/icon/stroke.png');
+	    	 $("#likeUnlockedspons .heart").attr('src', 'images/icon/stroke.png');
+	   	 	 $("#likelockedHalf .heart").attr('src', 'images/icon/stroke.png');
+	   	  	 $("#likelockedVideo .heart").attr('src', 'images/icon/stroke.png');
+	   	 	 $("#likelockedEegg .heart").attr('src', 'images/icon/stroke.png');
+	   	 	 $("#likeUnlockedEegg .heart").attr('src', 'images/icon/stroke.png');
+	   	 	 
+	   	 	 $('#lockedContinue').prop("href", "company.html");
+	   	 	 
+		    return false;
+	  });
+	  
+	  $('#likelockedVideo').click(function() {
+		     $("#likelockedVideo .heart").attr('src', 'images/icon/heart.png');
+	    	 $("#likeLockedspons .heart").attr('src', 'images/icon/stroke.png');
+	    	 $("#likeUnlockedspons .heart").attr('src', 'images/icon/stroke.png');
+	   	 	 $("#likelockedHalf .heart").attr('src', 'images/icon/stroke.png');
+	   	  	 $("#likelockedFull .heart").attr('src', 'images/icon/stroke.png');
+	   	 	 $("#likelockedEegg .heart").attr('src', 'images/icon/stroke.png');
+	   	 	 $("#likeUnlockedEegg .heart").attr('src', 'images/icon/stroke.png');
+	   	 	 
+	   	 	 $('#lockedContinue').prop("href", "video-locked.html");
+	   	 	
+		    return false;
+	  });
+	   
+	  $('#likelockedEegg').click(function() {
+		     $("#likelockedEegg .heart").attr('src', 'images/icon/heart.png');
+	    	 $("#likeLockedspons .heart").attr('src', 'images/icon/stroke.png');
+	    	 $("#likeUnlockedspons .heart").attr('src', 'images/icon/stroke.png');
+	   	 	 $("#likelockedHalf .heart").attr('src', 'images/icon/stroke.png');
+	   	  	 $("#likelockedFull .heart").attr('src', 'images/icon/stroke.png');
+	   	 	 $("#likelockedVideo .heart").attr('src', 'images/icon/stroke.png');
+	   	 	 $("#likeUnlockedEegg .heart").attr('src', 'images/icon/stroke.png');
+	   	 	 
+	   	 	 $('#lockedContinue').prop("href", "easter-egg1.html");
+	   	 	
+		    return false;
+	  });
+	  
+	  $('#likeUnlockedEegg').click(function() {
+		     $("#likeUnlockedEegg .heart").attr('src', 'images/icon/heart.png');
+	    	 $("#likeLockedspons .heart").attr('src', 'images/icon/stroke.png');
+	    	 $("#likeUnlockedspons .heart").attr('src', 'images/icon/stroke.png');
+	   	 	 $("#likelockedHalf .heart").attr('src', 'images/icon/stroke.png');
+	   	  	 $("#likelockedFull .heart").attr('src', 'images/icon/stroke.png');
+	   	 	 $("#likelockedVideo .heart").attr('src', 'images/icon/stroke.png');
+	   	 	 $("#likelockedEegg .heart").attr('src', 'images/icon/stroke.png');
+	   	 	 
+	   	 	 $('#lockedContinue').prop("href", "urgent-easter-egg1.html"); 
+	   	 	
+		    return false;
+	  });
+	  
+    
+  });
+</script>
+
+<script type="text/javascript" charset="utf-8">
+	$(document).ready(function() {
+		 $('#homePages').click(function() {
+			  $("#homePackages").css("display", "block"); 
+			  $("#homePackages").css("left", "12%"); 
+		    
+		      
+			 return false;
+		  });
+		 
+		 $('#closeHomePopup').click(function() {
+			  $("#homePackages").css("display", "none"); 
+			  $("#homePackages").css("left", "100%"); 
+		    
+		      
+			 return false;
+		  });
+		 
+		 $('#popUps').click(function() {
+			  $("#popUpPackages").css("display", "block"); 
+			  $("#popUpPackages").css("left", "12%"); 
+		    
+		      
+			 return false;
+		  });
+		 
+		 $('#closePopupPopup').click(function() {
+			  $("#popUpPackages").css("display", "none"); 
+			  $("#popUpPackages").css("left", "100%"); 
+		    
+		      
+			 return false;
+		  });
+		 
+		 $('#buyCredits').click(function() {
+			  $("#creditsPackages").css("display", "block"); 
+			  $("#creditsPackages").css("left", "12%"); 
+		    
+		      
+			 return false;
+		  });
+		 
+		 $('#closecreditsPopup').click(function() {
+			  $("#creditsPackages").css("display", "none"); 
+			  $("#creditsPackages").css("left", "100%"); 
+		    
+		      
+			 return false;
+		  });
+		 
+		 
+		 $('#lockedPages').click(function() {
+			  $("#lockedPackages").css("display", "block"); 
+			  $("#lockedPackages").css("left", "12%");
+			  
+		    
+			 return false;
+		  });
+		 
+		 $('#closeLockedPopup').click(function() {
+			  $("#lockedPackages").css("display", "none"); 
+			  $("#lockedPackages").css("left", "100%"); 
+		    
+		      
+			 return false;
+		  });
+		 
+	});
+</script>
+
+<script>
+	(function($){
+		$(window).load(function(){
+			$("#content-6").mCustomScrollbar({
+				axis:"x",
+				theme:"light-3",
+				advanced:{autoExpandHorizontalScroll:true}
+			});
+		});
+	})(jQuery);	
+	
+</script>
+
+</head>
+<body>
+<div id="Container">
+	<div class="header">
+		<div class="menu_bar">
+			<div class="logo">
+				<img alt="Seeka Logo" src="images/seeka.png">
+			</div>
+			
+			<div class="userDetails">	
+				<div class="profileImg"></div>
+				<div class="profileDetails">
+					<span>Name</span> <br>
+					<span>example@gmail.com</span><br>
+					<a href="#" class="link_decoration">My Profile</a>
+				</div>
+				
+			</div>
+		</div>
+	</div>
+	<div class="title_content">
+		
+		<div class="billing_infoTitle">
+			<span>Ad Package</span>
+		</div>
+		
+		<div class="ad_creation">
+			<a href="budgetco.html" class="btntme">Create Ad</a>
+		</div>
+			
+	</div>
+	<div id="content">
+		<hr>
+		<div id="sidemenuBar">
+				<ul>
+				<li class="ad-activity-icon">
+					<a href="ad-activity.html">
+						<img src="images/icon/ad-activity-menu.png"><br>
+						<span>Ad Activity</span>
+					</a>
+				</li>
+				<li class="profile-icon">
+					<a href="profile-view.html">
+						<img src="images/icon/user-menu.png">
+						<span>Profile</span>
+					</a>
+				</li>
+				<li class="groups-icon">
+					<a href="groups.html">
+						<img src="images/icon/group-menu.png">
+						<span>Groups</span>
+					</a>
+				</li>
+				<li class="billing-icon">
+					<a href="billing-info-view.html">
+						<img src="images/icon/billing-menu.png">
+						<span>Billing</span>
+					</a>
+				</li>
+				<li class="settings-icon">
+					<a href="#">
+						<img src="images/icon/settings-menu.png">
+						<span>Settings</span>
+					</a>
+				</li>
+				<li class="security-icon">
+					<a href="security.html">
+						<img src="images/icon/security-menu.png">
+						<span>Security</span>
+					</a>
+				</li>
+			</ul>
+		</div>
+		<div class="homeContent">
+			
+			<div class="homeBody">
+			
+				<h3>*click the image to view the full ads of each category</h3>
+			
+				<div class="pBody">
+				
+				
+					<div class="packageOption">
+						<a href="#" id="homePages">
+							<img src="images/pkgOptionHome.png">
+						</a>
+						
+						<span>Home Page</span>
+						
+					</div>
+					
+					<div class="space"></div>
+					
+					<div class="packageOption">
+						<a href="#" id="lockedPages">
+							<img src="images/pkgOptionLocked.png">
+						</a>
+						
+						<span>Locked Page</span>
+						
+					</div>
+					
+					<div class="space"></div>
+					
+					<div class="packageOption">
+						<a href="#" id="popUps">
+							<img src="images/pkgOptionPopup.png">
+						</a>
+						
+						<span>Pop Ups</span>
+						
+					</div>
+					
+					<div class="space"></div>
+					
+					<div class="packageOption">
+						<a href="#" id="buyCredits">
+							<img src="images/pkgOptionBuycredits.png">
+						</a>
+						
+						<span>Buy Credits</span>
+						
+					</div>
+					
+				
+				</div>
+				
+				<div class="bodySelectionPopup" id="homePackages">
+				
+					<div class="transBodyPopup">
+	
+					</div>
+					
+					<div class="innerPackageContent">
+					
+						<h3>Home Page</h3>
+						<div class="close"><a href="#" id="closeHomePopup"><img src="images/icon/cross75.png"></a></div>
+						<div class="bodySelectionInner homePackageContainer">
+						
+							<div class="packageOption">
+								
+								<img src="images/Fullpkg.png">
+								<span>Image</span>
+								
+								<div class="likeSelect">
+									<a href="#" id="likeHomeImage">
+										<img src="images/icon/stroke.png" class="heart">
+									</a>
+								</div>
+								
+							</div>
+							<div class="space"></div>
+							<div class="packageOption">
+								
+								<img src="images/optVideohome.png">
+								<span>Video</span>
+								
+								<div class="likeSelect">
+									<a href="#" id="likeHomeVideo">
+										<img src="images/icon/stroke.png" class="heart">
+									</a>
+								</div>
+								
+							</div>
+						
+					</div>
+					
+					<div class="confirm">
+						<a href="#" class="btntme" id="homeContinue">Continue</a>
+					</div>
+					
+					</div>
+					
+				</div>
+				
+				<div class="bodySelectionPopup" id="popUpPackages">
+				
+					<div class="transBodyPopup">
+
+					</div>
+					
+					<div class="innerPackageContent">
+					
+						<h3>Pop Up</h3>
+						<div class="close"><a href="#" id="closePopupPopup"><img src="images/icon/cross75.png"></a></div>
+						<div class="bodySelectionInner popupPackageContainer">
+						
+							<div class="packageOption">
+								
+									<img src="images/optImagehome.png">
+								
+								
+								<span>Full Image</span>
+								<span>(Visit Website)</span>
+								
+								<div class="likeSelect exspn">
+									<a href="#" id="likepopFull">
+										<img src="images/icon/stroke.png" class="heart">
+									</a>
+								</div>
+								
+							</div>
+							<div class="space"></div>
+							<div class="packageOption">
+								
+								<img src="images/optHalfmage.png">
+
+								<span>Half Image</span>
+								<span>(Visit Website)</span>
+								
+								<div class="likeSelect exspn">
+									<a href="#" id="likepopHalf">
+										<img src="images/icon/stroke.png" class="heart">
+									</a>
+								</div>
+								
+							</div>
+							<div class="space"></div>
+							<div class="packageOption">
+								
+								<img src="images/optFacebook.png">
+								<span>facebook Page</span>
+								
+								<div class="likeSelect">
+									 <a href="#" id="likepopFb">
+										<img src="images/icon/stroke.png" class="heart">
+									</a>
+								</div>
+								
+							</div>
+							<div class="space"></div>
+							<div class="packageOption">
+								
+								<img src="images/optInApps.png">
+								<span>Install App</span>
+								
+								<div class="likeSelect">
+									<a href="#" id="likepopInApp">
+										<img src="images/icon/stroke.png" class="heart">
+									</a>
+								</div>
+								
+							</div>
+						
+					</div>
+					
+					<div class="confirm">
+						<a href="#" class="btntme" id="popupContinue">Continue</a>
+					</div>
+					
+					</div>
+					
+				</div>
+				
+				<div class="bodySelectionPopup" id="creditsPackages">
+				
+					<div class="transBodyPopup">
+	
+					</div>
+					
+					<div class="innerPackageContent">
+					
+						<h3>Buy Credits</h3>
+						<div class="close"><a href="#" id="closecreditsPopup"><img src="images/icon/cross75.png"></a></div>
+						<div class="bodySelectionInner creditsPackageContainer">
+						
+							<div class="packageOption">
+								
+								<img src="images/optSurvey.png">
+								<span>Survey</span>
+								
+								<div class="likeSelect">
+									<a href="#" id="likecreditsSurvey">
+										<img src="images/icon/stroke.png" class="heart">
+									</a>
+								</div>
+								
+							</div>
+							<div class="space"></div>
+							
+							<div class="packageOption">
+								
+								<img src="images/installApps.png">
+								<span>Install Apps</span>
+								
+								<div class="likeSelect">
+									<a href="#" id="likecreditsInApps">
+										<img src="images/icon/stroke.png" class="heart">
+									</a>
+								</div>
+								
+							</div>
+							<div class="space"></div>
+							<div class="packageOption">
+								
+								<img src="images/optWatchVideo.png">
+								<span>Watch Video</span>
+								
+								<div class="likeSelect">
+									<a href="#" id="likecreditsVideo">
+										<img src="images/icon/stroke.png" class="heart">
+									</a>
+								</div>
+								
+							</div>
+						
+					</div>
+					
+					<div class="confirm">
+						<a href="#" class="btntme" id="creditsContinue">Continue</a>
+					</div>
+					
+					</div>
+					
+				</div>
+				
+				
+				<div class="bodySelectionPopup" id="lockedPackages">
+				
+					<div class="transBodyPopup">
+	
+					</div>
+					
+					<div class="innerPackageContent">
+					
+						<h3>Locked Screen</h3>
+						<div class="close"><a href="#" id="closeLockedPopup"><img src="images/icon/cross75.png"></a></div>
+						
+						<div class="scrollBody content horizontal-images" id="content-6">
+							
+							<div class="bodySelectionInner lockedPackageContainer">
+						
+							<div class="packageOption">
+								
+									<img src="images/optLockedSponsored.png">
+								
+								
+								<span>Sponsored Box</span>
+								<span>(Locked)</span>
+								
+								<div class="likeSelect exspn">
+									<a href="#" id="likeLockedspons">
+									<img src="images/icon/stroke.png" class="heart">
+									</a>
+								</div>
+								
+							</div>
+							<div class="space"></div>
+							
+							<div class="packageOption">
+								
+								<img src="images/optSponsUnlocked.png">
+
+								<span>Sponsored Box</span>
+								<span>(Unlocked)</span>
+								
+								<div class="likeSelect exspn">
+									<a href="#" id="likeUnlockedspons">
+									<img src="images/icon/stroke.png" class="heart">
+									</a>
+									
+								</div>
+								
+							</div>
+							<div class="space"></div>
+							<div class="packageOption">
+								
+								<img src="images/optHalfmage.png">
+
+								<span>Half Image</span>
+								
+								<div class="likeSelect">
+									<a href="#" id="likelockedHalf">
+									<img src="images/icon/stroke.png" class="heart">
+									</a>
+								</div>
+								
+							</div>
+							
+							<div class="space"></div>
+							<div class="packageOption">
+								
+								<img src="images/optImagehome.png">
+
+								<span>Full Image</span>
+								
+								<div class="likeSelect">
+									<a href="#" id="likelockedFull">
+									<img src="images/icon/stroke.png" class="heart">
+									</a>
+								</div>
+								
+							</div>
+							
+							<div class="space"></div>
+							<div class="packageOption">
+								
+								<img src="images/optVideohome.png">
+
+								<span>Video</span>
+								
+								<div class="likeSelect">
+									<a href="#" id="likelockedVideo">
+									<img src="images/icon/stroke.png" class="heart">
+									</a>
+								</div>
+								
+							</div>
+							
+							<div class="space"></div>
+							<div class="packageOption">
+								
+								<img src="images/optEasterEgg.png">
+
+								<span>Easter Egg</span>
+								
+								<div class="likeSelect">
+									<a href="#" id="likelockedEegg">
+									<img src="images/icon/stroke.png" class="heart">
+									</a>
+								</div>
+								
+							</div>
+							
+							<div class="space"></div>
+							<div class="packageOption">
+								
+								<img src="images/optEasterEgg.png">
+
+								<span>Unlocked Easter Egg</span>
+								
+								<div class="likeSelect">
+									<a href="#" id="likeUnlockedEegg">
+									<img src="images/icon/stroke.png" class="heart">
+									</a>
+								</div>
+								
+							</div>
+						
+					</div>
+						</div>
+					
+					
+					<div class="confirm">
+						<a href="#" class="btntme" id="lockedContinue">Continue</a>
+					</div>
+					
+					</div>
+					
+				</div>
+				
+				
+					
+					<div class="footer">
+						<div class="footer_links"> 
+							<p><a href="#">2015 Seeka</a>-<a href="#">Cookies, Privacy and Terms</a>-<a href="#">Contact</a></p>
+						</div> 
+					</div>
+			
+			</div>
+			
+		</div>
+	</div>
+</div>
+</body>
+</html>

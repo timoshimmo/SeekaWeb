@@ -1,0 +1,202 @@
+@CHARSET "UTF-8";
+
+html {
+	display: block;
+	min-height: 100%;
+	width: 100%;
+	position: relative;
+}
+
+body {
+	margin: 0;
+	padding: 0;
+	top:0;
+    left: 0;
+	background: #ffffff;
+	height: 100%;
+	overflow: auto;
+	position: relative;
+	display: block;
+}
+
+.defwth {
+	width: 1144px;
+}
+
+
+#globalContainer {
+	margin: 0;
+	padding: 0;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	position: relative;
+	zoom:1;
+}
+
+/***
+Sign Up Header Attributes. 
+The attributes of Logo and Login Form
+***/
+
+
+
+.header .login {
+	margin-top: 1%;
+	margin-right: 8%;
+}
+
+.header .login label {
+	font-family: 'MyWebFont',Helvetica, sans-serif;
+	font-size: 0.85em;
+	font-weight: 100;
+	color: #ffffff;
+	display: inline-block;
+	width: 80px;
+	margin-bottom: 10px;
+}
+
+.header .login span {
+	font-family: 'MyWebFont',Helvetica, sans-serif;
+	font-size: 0.85em;
+	margin-left: 5px;
+	font-weight: 100;
+	color: #ffffff;
+}
+
+.header .login a {
+	font-family: 'MyWebFont',Helvetica, sans-serif;
+	font-size: 0.85em;
+	color: #ffffff;
+	font-weight: 100;
+	margin-top: 4px;
+	margin-left: 2px;
+	display: block;
+}
+
+
+.header .login input[type="text"] {
+	height: 20px;
+	width: 165px;
+	font-family: 'MyWebFont',Helvetica, sans-serif;
+	font-size: 0.85em;
+	color: #424242;	
+	-moz-border-radius:2px;
+	-webkit-border-radius:2px;
+	-o-border-radius:2px;
+	border-radius:2px;
+	border:1px solid #5dbfe6;
+	margin-bottom: 5px;
+	font-weight: 100;
+	background: #ffffff;
+	
+}
+
+.header .login input[type="submit"] {
+	height: 22px;
+	width: 90px;
+	font-family: 'MyWebFont', Helvetica, sans-serif;
+	font-size: 0.85em;
+	-moz-border-radius:1px;
+	-webkit-border-radius:1px;
+	-o-border-radius:1px;
+	border-radius:1px;
+	cursor: pointer;
+	border:none;
+	font-weight: 100;
+	margin-top: 30%;
+
+}
+
+
+.loginBody {
+	float: left;
+	margin-right: 15px;
+}
+
+/***
+Sign Up Body Attributes. 
+The attributes of phone image and Sign Up Form
+***/
+
+#container {	
+	height: 595px;
+	margin: 0 auto;
+	padding-top: 120px;
+	background: #ffffff;
+}
+
+#container #signup_image {
+	height: 490px;
+	margin-left: 120px;
+	float: left;
+}
+
+#container #signup {
+	font-family: 'MyWebFont', Helvetica, sans-serif;
+	margin-right: 80px;
+	float: right;
+	text-align: right;
+}
+
+#container #signup h3 {
+	font-size: 35px;
+	font-weight: 300;
+	margin: 0px 135px 5px 0px;
+	
+}
+
+#container #signup p {
+	font-size: 1.18em;
+	margin-right: 4.5%;
+	font-weight: 300;
+	
+}
+
+#container #signup label {
+	font-family: 'MyWebFont', Helvetica, sans-serif;
+	font-size: 19px;
+	margin-right: 10px;
+	font-weight: 100;
+	
+}
+
+#container #signup input[type="text"] {
+	height: 32px;
+	width: 357px;
+	font-family: 'MyWebFont', Helvetica, sans-serif;
+	font-size: 19px;
+	color: #424242;	
+	margin-bottom: 8px;
+	margin-right: 18px;
+
+}
+
+#container #signup input[type="submit"] {
+	height: 35px;
+	width: 150px;
+	font-family: 'MyWebFont', Helvetica, sans-serif;
+	font-size: 1em;
+	-moz-border-radius:2px;
+	-o-border-radius:2px;
+	-webkit-border-radius:2px;
+	border-radius:2px;
+	border: 0;
+	cursor: pointer;
+	margin-right: 120px;
+}
+
+#container #signup .user_type {
+	margin: 5px 0 20px 0;
+}
+
+#container #signup .user_type label {
+	font-size: 20px;
+	margin-right: 22px;
+	margin-left: 12px;
+	font-weight: 300;
+	display: inline-block;
+    cursor: pointer;
+	
+}

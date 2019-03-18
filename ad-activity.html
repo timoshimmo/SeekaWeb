@@ -1,0 +1,640 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Seeka</title>
+<link rel="styleSheet" href="css/styles.css" type="text/css" media="screen" />
+<link rel="styleSheet" href="css/global.css" type="text/css" media="screen" />
+<link rel="styleSheet" href="css/profile.css" type="text/css" media="screen" />
+<link rel="styleSheet" href="css/ad-activity.css" type="text/css" media="screen" />
+<link href="css/billing_selector.css" rel="stylesheet">
+
+<script type="text/javascript" src="js/jquery-1.11.3.js"></script>
+<script src="js/icheck.js"></script>
+
+<script>
+$(document).ready(function(){
+  $('input').iCheck({
+	checkboxClass: 'icheckbox_minimal',
+    radioClass: 'iradio_minimal',
+    increaseArea: '20%' // optional
+  });
+});
+</script>
+
+<script>
+$(document).ready(function(){
+  $('input').iCheck({
+    checkboxClass: 'icheckbox_minimal-blue',
+    radioClass: 'iradio_minimal-blue',
+    increaseArea: '20%' // optional
+  });
+});
+</script>
+
+<script>
+$(document).ready(function(){
+	$('#AdsTable').find("tbody tr").each(function() {
+	    var adStatus = $(this).find("td:last").html(); 
+	    
+	    if(adStatus == "Active") {
+	    	$(this).find("td:last").css("color", "#08974b");
+	    }
+	    
+	    if(adStatus == "Passive") {
+	    	$(this).find("td:last").css("color", "#fcb041");
+	    }
+	    
+	    if(adStatus == "Limit Reached") {
+	    	$(this).find("td:last").css("color", "#be202e");
+	    }
+	});
+});
+</script>
+
+</head>
+<body>
+<div id="Container">
+	<div class="header">
+		<div class="menu_bar">
+			<div class="logo">
+				<img alt="Seeka Logo" src="images/seeka.png">
+			</div>
+			
+			<div class="userDetails">	
+				<div class="profileImg"></div>
+				<div class="profileDetails">
+					<span>Name</span> <br>
+					<span>example@gmail.com</span><br>
+					<a href="#" class="link_decoration">My Profile</a>
+				</div>
+				
+			</div>
+		</div>
+	</div>
+	<div class="title_content">
+		<div class="backButton"><a href="home.html"><img src="images/icon/back_button.png"></a></div>
+		<div class="billing_info">
+			<span>Ad Activity</span>
+		</div>
+		
+		<div class="ad_creation">
+			<a href="budgetco.html" class="btntme">Create Ad</a>
+		</div>
+			
+	</div>
+	<div id="content">
+		<hr>
+		<div id="sidemenuBar">
+			<ul>
+				<li class="ad-activity-icon">
+					<a href="ad-activity.html">
+						<img src="images/icon/ad-activity-menu.png"><br>
+						<span>Ad Activity</span>
+					</a>
+				</li>
+				<li class="profile-icon">
+					<a href="profile-view.html">
+						<img src="images/icon/user-menu.png">
+						<span>Profile</span>
+					</a>
+				</li>
+				<li class="groups-icon">
+					<a href="groups.html">
+						<img src="images/icon/group-menu.png">
+						<span>Groups</span>
+					</a>
+				</li>
+				<li class="billing-icon">
+					<a href="billing-info-view.html">
+						<img src="images/icon/billing-menu.png">
+						<span>Billing</span>
+					</a>
+				</li>
+				<li class="settings-icon">
+					<a href="#">
+						<img src="images/icon/settings-menu.png">
+						<span>Settings</span>
+					</a>
+				</li>
+				<li class="security-icon">
+					<a href="security.html">
+						<img src="images/icon/security-menu.png">
+						<span>Security</span>
+					</a>
+				</li>
+			</ul>
+		</div>
+		<div class="homeContent">
+			
+			<div class="homeBody">
+			
+			<div class="topTitles">
+				<span class="adActivityTitle">Ads Status</span>
+				
+				<div class="adOptions">
+			
+					<ul class="adActivityOtions">
+						<li><a href="#">Active</a></li>
+						<li><a href="#">Passive</a></li>
+						<li><a href="#">Trash</a></li>
+						<li><a href="#">Renew</a></li>
+						<li><a href="#">Edit</a></li>
+					</ul>
+				  </div>
+				
+				</div>
+				
+				<div class="tableBody">
+				<table id="AdsTable">
+					<thead>
+						<tr>
+							<th><input type="checkbox" name="select_all" value="selectAll"></th>
+							<th class="advTabTitle">Advertisement</th>
+							<th>Type of Ad</th>
+							<th>AdID</th>
+							<th>Created On</th>
+							<th>Budget</th>
+							<th>Views</th>
+							<th>Filters (target)</th>
+							<th>Status</th>
+							
+						</tr>
+					</thead>
+					<tbody>
+						
+						 <tr>
+						 	 <td>
+								<input type="checkbox" name="select_row" value="selectOption">
+							</td>
+						     <td class="linkCol"><a href="#">Internship Advertising/Marketing</a></td>
+						     <td>Home Page</td>
+						     <td>848KJY67</td>
+						     <td>Sep 30</td>
+						     <td>$ 30</td>
+						     <td>300</td>
+						     <td>20 000</td>
+						     <td>Active</td>
+						     
+					    </tr>
+					    
+					     <tr>
+					     	  <td>
+								<input type="checkbox" name="select_row" value="selectOption">
+							</td>
+						     <td class="linkCol"><a href="#">Internship Advertising/Marketing</a></td>
+						     <td>Locked Screen</td>
+						     <td>848KJY67</td>
+						     <td>Sep 30</td>
+						     <td>$ 0</td>
+						     <td>30 000</td>
+						     <td>60 000</td>
+						     <td>Limit Reached</td>
+						     
+					    </tr>
+					    
+					    <tr>
+					    	 <td>
+								<input type="checkbox" name="select_row" value="selectOption">
+							</td>
+						     <td class="linkCol"><a href="#">Internship Advertising/Marketing</a></td>
+						     <td>Pop Ups</td>
+						     <td>848KJY67</td>
+						     <td>Sep 30</td>
+						     <td>$ 0</td>
+						     <td>20 000</td>
+						     <td>10 000</td>
+						     <td>Passive</td>
+						     
+					    </tr>
+					    
+					     <tr>
+					     	 <td>
+								<input type="checkbox" name="select_row" value="selectOption">
+							</td>
+						     <td class="linkCol"><a href="#">Internship Advertising/Marketing</a></td>
+						     <td>Buy Credits</td>
+						     <td>848KJY67</td>
+						     <td>Sep 29</td>
+						     <td>$ 0</td>
+						     <td>20 000</td>
+						     <td>50 000</td>
+						     <td>Passive</td>
+						     
+					    </tr>
+					    
+					     <tr>
+					     	 <td>
+								<input type="checkbox" name="select_row" value="selectOption">
+							</td>
+						     <td class="linkCol"><a href="#">Internship Advertising/Marketing</a></td>
+						     <td>Pop Ups</td>
+						     <td>848KJY67</td>
+						     <td>Sep 29</td>
+						     <td>$ 100</td>
+						     <td>80 000</td>
+						     <td>100 000</td>
+						     <td>Active</td>
+						    
+					    </tr>
+					    
+					    <tr>
+					     	 <td>
+								<input type="checkbox" name="select_row" value="selectOption">
+							</td>
+						     <td class="linkCol"><a href="#">Internship Advertising/Marketing</a></td>
+						     <td>Looked Screen</td>
+						     <td>848KJY67</td>
+						     <td>Sep 28</td>
+						     <td>$ 200</td>
+						     <td>120 000</td>
+						     <td>110 000</td>
+						     <td>Active</td>
+						    
+					    </tr>
+					    
+					    <tr>
+					     	 <td>
+								<input type="checkbox" name="select_row" value="selectOption">
+							</td>
+						     <td class="linkCol"><a href="#">Internship Advertising/Marketing</a></td>
+						     <td>Pop Ups</td>
+						     <td>848KJY67</td>
+						     <td>Sep 29</td>
+						     <td>$ 100</td>
+						     <td>80 000</td>
+						     <td>100 000</td>
+						     <td>Active</td>
+						    
+					    </tr>
+					    
+					    <tr>
+					     	 <td>
+								<input type="checkbox" name="select_row" value="selectOption">
+							</td>
+						     <td class="linkCol"><a href="#">Internship Advertising/Marketing</a></td>
+						     <td>Pop Ups</td>
+						     <td>848KJY67</td>
+						     <td>Sep 28</td>
+						     <td>$ 0</td>
+						     <td>20 000</td>
+						     <td>50 000</td>
+						     <td>Passive</td>
+						    
+					    </tr>
+					    
+					     <tr>
+					     	 <td>
+								<input type="checkbox" name="select_row" value="selectOption">
+							</td>
+						     <td class="linkCol"><a href="#">Internship Advertising/Marketing</a></td>
+						     <td>Pop Ups</td>
+						     <td>848KJY67</td>
+						     <td>Sep 27</td>
+						     <td>$ 0</td>
+						     <td>20 000</td>
+						     <td>70 000</td>
+						     <td>Passive</td>
+						    
+					    </tr>
+					    
+					     <tr>
+					     	 <td>
+								<input type="checkbox" name="select_row" value="selectOption">
+							</td>
+						     <td class="linkCol"><a href="#">Internship Advertising/Marketing</a></td>
+						     <td>Home Page</td>
+						     <td>848KJY67</td>
+						     <td>Sep 25</td>
+						     <td>$ 0</td>
+						     <td>20 000</td>
+						     <td>10 000</td>
+						     <td>Passive</td>
+						    
+					    </tr>
+					    
+					     <tr>
+					     	 <td>
+								<input type="checkbox" name="select_row" value="selectOption">
+							</td>
+						     <td class="linkCol"><a href="#">Internship Advertising/Marketing</a></td>
+						     <td>Pop Ups</td>
+						     <td>848KJY67</td>
+						     <td>Sep 23</td>
+						     <td>$ 100</td>
+						     <td>120 000</td>
+						     <td>150 000</td>
+						     <td>Passive</td>
+						    
+					    </tr>
+					    
+					     <tr>
+					     	 <td>
+								<input type="checkbox" name="select_row" value="selectOption">
+							</td>
+						     <td class="linkCol"><a href="#">Internship Advertising/Marketing</a></td>
+						     <td>Buy Credits</td>
+						     <td>848KJY67</td>
+						     <td>Sep 23</td>
+						     <td>$ 0</td>
+						     <td>20 000</td>
+						     <td>10 000</td>
+						     <td>Passive</td>
+						    
+					    </tr>
+					    
+					     <tr>
+					     	 <td>
+								<input type="checkbox" name="select_row" value="selectOption">
+							</td>
+						     <td class="linkCol"><a href="#">Internship Advertising/Marketing</a></td>
+						     <td>Pop Ups</td>
+						     <td>848KJY67</td>
+						     <td>Sep 23</td>
+						     <td>$ 20</td>
+						     <td>30 000</td>
+						     <td>40 000</td>
+						     <td>Active</td>
+						    
+					    </tr>
+					    
+					     <tr>
+					     	 <td>
+								<input type="checkbox" name="select_row" value="selectOption">
+							</td>
+						     <td class="linkCol"><a href="#">Internship Advertising/Marketing</a></td>
+						     <td>Locked Screen</td>
+						     <td>848KJY67</td>
+						     <td>Sep 30</td>
+						     <td>$ 0</td>
+						     <td>30 000</td>
+						     <td>60 000</td>
+						     <td>Limit Reached</td>
+						    
+					    </tr>
+					    
+					     <tr>
+					     	 <td>
+								<input type="checkbox" name="select_row" value="selectOption">
+							</td>
+						     <td class="linkCol"><a href="#">Internship Advertising/Marketing</a></td>
+						     <td>Pop Ups</td>
+						     <td>848KJY67</td>
+						     <td>Sep 30</td>
+						     <td>$ 0</td>
+						     <td>20 000</td>
+						     <td>10 000</td>
+						     <td>Passive</td>
+						    
+					    </tr>
+					    
+					     <tr>
+					     	 <td>
+								<input type="checkbox" name="select_row" value="selectOption">
+							</td>
+						     <td class="linkCol"><a href="#">Internship Advertising/Marketing</a></td>
+						     <td>Buy Credits</td>
+						     <td>848KJY67</td>
+						     <td>Sep 29</td>
+						     <td>$ 0</td>
+						     <td>20 000</td>
+						     <td>50 000</td>
+						     <td>Passive</td>
+						    
+					    </tr>
+					    
+					     <tr>
+					     	 <td>
+								<input type="checkbox" name="select_row" value="selectOption">
+							</td>
+						     <td class="linkCol"><a href="#">Internship Advertising/Marketing</a></td>
+						     <td>Pop Ups</td>
+						     <td>848KJY67</td>
+						     <td>Sep 29</td>
+						     <td>$ 100</td>
+						     <td>80 000</td>
+						     <td>100 000</td>
+						     <td>Active</td>
+						    
+					    </tr>
+					    
+					     <tr>
+					     	 <td>
+								<input type="checkbox" name="select_row" value="selectOption">
+							</td>
+						     <td class="linkCol"><a href="#">Internship Advertising/Marketing</a></td>
+						     <td>Locked Screen</td>
+						     <td>848KJY67</td>
+						     <td>Sep 28</td>
+						     <td>$ 200</td>
+						     <td>120 000</td>
+						     <td>110 000</td>
+						     <td>Active</td>
+						    
+					    </tr>
+					    
+					     <tr>
+					     	 <td>
+								<input type="checkbox" name="select_row" value="selectOption">
+							</td>
+						     <td class="linkCol"><a href="#">Internship Advertising/Marketing</a></td>
+						     <td>Pop Ups</td>
+						     <td>848KJY67</td>
+						     <td>Sep 29</td>
+						     <td>$ 100</td>
+						     <td>80 000</td>
+						     <td>100 000</td>
+						     <td>Active</td>
+						    
+					    </tr>
+					    
+					     <tr>
+					     	 <td>
+								<input type="checkbox" name="select_row" value="selectOption">
+							</td>
+						     <td class="linkCol"><a href="#">Internship Advertising/Marketing</a></td>
+						     <td>Pop Ups</td>
+						     <td>848KJY67</td>
+						     <td>Sep 28</td>
+						     <td>$ 0</td>
+						     <td>20 000</td>
+						     <td>50 000</td>
+						     <td>Passive</td>
+						    
+					    </tr>
+					    
+					     <tr>
+					     	 <td>
+								<input type="checkbox" name="select_row" value="selectOption">
+							</td>
+						     <td class="linkCol"><a href="#">Internship Advertising/Marketing</a></td>
+						     <td>Pop Ups</td>
+						     <td>848KJY67</td>
+						     <td>Sep 27</td>
+						     <td>$ 0</td>
+						     <td>20 000</td>
+						     <td>70 000</td>
+						     <td>Passive</td>
+						    
+					    </tr>
+					    
+					     <tr>
+					     	 <td>
+								<input type="checkbox" name="select_row" value="selectOption">
+							</td>
+						     <td class="linkCol"><a href="#">Internship Advertising/Marketing</a></td>
+						     <td>Pop Ups</td>
+						     <td>848KJY67</td>
+						     <td>Sep 27</td>
+						     <td>$ 0</td>
+						     <td>20 000</td>
+						     <td>70 000</td>
+						     <td>Passive</td>
+						    
+					    </tr>
+					    
+					     <tr>
+					     	 <td>
+								<input type="checkbox" name="select_row" value="selectOption">
+							</td>
+						     <td class="linkCol"><a href="#">Internship Advertising/Marketing</a></td>
+						     <td>Home Page</td>
+						     <td>848KJY67</td>
+						     <td>Sep 25</td>
+						     <td>$ 0</td>
+						     <td>20 000</td>
+						     <td>10 000</td>
+						     <td>Passive</td>
+						    
+					    </tr>
+					    
+					     <tr>
+					     	 <td>
+								<input type="checkbox" name="select_row" value="selectOption">
+							</td>
+						     <td class="linkCol"><a href="#">Internship Advertising/Marketing</a></td>
+						     <td>Pop Ups</td>
+						     <td>848KJY67</td>
+						     <td>Sep 23</td>
+						     <td>$ 100</td>
+						     <td>120 000</td>
+						     <td>150 000</td>
+						     <td>Active</td>
+						    
+					    </tr>
+					    
+					     <tr>
+					     	 <td>
+								<input type="checkbox" name="select_row" value="selectOption">
+							</td>
+						     <td class="linkCol"><a href="#">Internship Advertising/Marketing</a></td>
+						     <td>Buy Credits</td>
+						     <td>848KJY67</td>
+						     <td>Sep 23</td>
+						     <td>$ 0</td>
+						     <td>20 000</td>
+						     <td>10 000</td>
+						     <td>Passive</td>
+						    
+					    </tr>
+					    
+					     <tr>
+					     	 <td>
+								<input type="checkbox" name="select_row" value="selectOption">
+							</td>
+						     <td class="linkCol"><a href="#">Internship Advertising/Marketing</a></td>
+						     <td>Pop Ups</td>
+						     <td>848KJY67</td>
+						     <td>Sep 23</td>
+						     <td>$ 20</td>
+						     <td>30 000</td>
+						     <td>40 000</td>
+						     <td>Active</td>
+						    
+					    </tr>
+					    
+					     <tr>
+					     	 <td>
+								<input type="checkbox" name="select_row" value="selectOption">
+							</td>
+						     <td class="linkCol"><a href="#">Internship Advertising/Marketing</a></td>
+						     <td>Looked Screen</td>
+						     <td>848KJY67</td>
+						     <td>Sep 28</td>
+						     <td>$ 200</td>
+						     <td>120 000</td>
+						     <td>110 000</td>
+						     <td>Active</td>
+						    
+					    </tr>
+					    
+					     <tr>
+					     	 <td>
+								<input type="checkbox" name="select_row" value="selectOption">
+							</td>
+						     <td class="linkCol"><a href="#">Internship Advertising/Marketing</a></td>
+						     <td>Pop Ups</td>
+						     <td>848KJY67</td>
+						     <td>Sep 28</td>
+						     <td>$ 0</td>
+						     <td>20 000</td>
+						     <td>50 000</td>
+						     <td>Passive</td>
+						    
+					    </tr>
+					    
+					     <tr>
+					     	 <td>
+								<input type="checkbox" name="select_row" value="selectOption">
+							</td>
+						     <td class="linkCol"><a href="#">Internship Advertising/Marketing</a></td>
+						     <td>Pop Ups</td>
+						     <td>848KJY67</td>
+						     <td>Sep 27</td>
+						     <td>$ 0</td>
+						     <td>20 000</td>
+						     <td>70 000</td>
+						     <td>Passive</td>
+						    
+					    </tr>
+					    
+					</tbody>
+				</table>
+			</div>
+			<div class="adOptions">
+			
+				<ul class="adActivityOtions">
+					<li><a href="#">Active</a></li>
+					<li><a href="#">Passive</a></li>
+					<li><a href="#">Trash</a></li>
+					<li><a href="#">Renew</a></li>
+					<li><a href="#">Edit</a></li>
+				</ul>
+			</div>
+			<div class="adPages">
+			
+				<ul class="adActivityPages">
+					<li><a href="#">1</a></li>
+					<li><a href="#">2</a></li>
+					<li><a href="#">3</a></li>
+					<li><a href="#">4</a></li>
+					<li><a href="#">5</a></li>
+					<li><a href="#">6</a></li>
+					<li><a href="#">7</a></li>
+					<li><a href="#">8</a></li>
+				</ul>
+			</div>
+			
+			<div class="footer">
+				<div class="footer_links"> 
+					<p><a href="#">2015 Seeka</a>-<a href="#">Cookies, Privacy and Terms</a>-<a href="#">Contact</a></p>
+				</div> 
+			</div>
+			
+		</div>
+		
+	</div>
+</div>
+</div>
+</body>
+</html>

@@ -1,0 +1,220 @@
+@CHARSET "UTF-8";
+
+#content {
+	width: 100%;
+	height: 780px;
+	position: relative;
+	margin: 0 auto;
+	display: block;
+}
+
+#content hr {
+	height: 1px;
+	background: #a0a0a0;
+	clear: both;
+	display: block;
+	margin: 0;
+	padding: 0;
+}
+
+#content #formBody {
+	width: 94%;
+	height: 80%;
+	margin: 0 auto;
+}
+
+
+#formBody .budgetForm {
+	height: 100%;
+	width: 100%;
+}
+
+#formBody h2 {
+	font-family: 'MyWebFont', Helvetica, sans-serif;
+	font-size: 1.1em;
+	font-weight: 100;
+	margin: 0 auto;
+	padding: 20px 0 30px 0;
+	color: #424242;
+	width: 150px;
+	text-align: center;
+}
+
+.budgetWrapper {
+	height: 85%;
+	width: 100%;
+	margin-bottom: 50px;
+}
+
+#budgetTargetBody h2 {
+	font-family: 'MyWebFont', Helvetica, sans-serif;
+	font-size: 1.1em;
+	font-weight: 100;
+	margin: 0 auto;
+	padding: 20px 0 10px 0;
+	color: #424242;
+	width: 150px;
+	text-align: center;
+}
+
+#formBody .budgetForm label {
+	font-family: 'MyWebFont', Helvetica, sans-serif;
+	font-size: 1em;
+	font-weight: normal;
+	color: #7f7f7f;
+	display: inline-block;
+	width: 35%;
+}
+
+#formBody #budgetTargetBody p {
+	font-family: 'MyWebFont', Helvetica, sans-serif;
+	font-size: 1em;
+	font-weight: normal;
+	color: #7f7f7f;
+	display: inline-block;
+	width: 100%;
+}
+
+#formBody .budgetForm input[type="text"] {
+	font-family: 'MyWebFont', Helvetica, sans-serif;
+	font-size: 0.9em;
+	font-weight: 300;
+	color: #7f7f7f;
+	display: inline-block;
+	width: 60%;
+	height: 30px;
+	margin-bottom: 8px;
+	padding-left: 10px;
+	-webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+#formBody .budgetForm select {
+	font-family: 'MyWebFont', Helvetica, sans-serif;
+	font-size: 0.9em;
+	font-weight: 300;
+	color: #7f7f7f;
+	display: inline-block;
+	width: 60%;
+	height: 30px;
+	margin-bottom: 8px;
+	padding-left: 18px;
+	-webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+
+}
+
+.budar {
+	height: 470px;
+	width: 47%;
+	margin: 0;
+	padding-left: 5px;
+	float: left;
+}
+
+.bugdar {
+	height: 470px;
+	width: 46%;
+	margin: 0;
+	padding-left: 20px;
+	float: left;
+}
+
+#formBody .divider {
+	height: 100%;
+	width: 2px;
+	margin-left: 15px;
+	margin-right: 15px;
+	float: left;
+	background: #d4d4d4;
+}
+
+#formBody .budgetConfirm {
+	width: 200px;
+	margin: 0 auto;
+	height: 60px;
+}
+
+#formBody .budgetConfirm input[type="submit"] {
+	width: 150px;
+	height: 30px;
+	font-family: 'MyWebFont', Helvetica, sans-serif;
+	font-size: 1em;
+	font-weight: 100;
+	-moz-border-radius:2px;
+	-webkit-border-radius:2px;
+	-o-border-radius:2px;
+	border-radius:2px;
+	float: left;
+	margin-left: 10px;
+	border: none;
+	cursor: pointer;
+}
+
+#formBody input[type=range] {
+	
+	width: 96%;
+	font-family: 'MyWebFont', Helvetica, sans-serif;
+	font-size: 1em;
+	font-weight: 100;
+	float: left;
+	border: none;
+	margin-top: 20px;
+	margin-bottom: 10px;
+	padding: 0;
+}
+
+#formBody .note {
+	width: 100%;
+	height: 40px;
+	text-align: left;
+	background: #5dbfe6;
+}
+
+#formBody .note span{
+	width: 95%;
+	margin: 0 auto;
+	font-family: 'MyWebFont', Helvetica, sans-serif;
+	font-size: 0.6em;
+	color: #ffffff;
+	display: block;
+	top: 50%;
+	transform: translate(0, -50%);
+	-webkit-transform: translate(0, -50%);
+	-moz-transform: translate(0, -50%);
+	-o-transform: translate(0, -50%);
+	position: relative;
+}
+
+#formBody .budgetForm #budgetTargetBody input[type="text"] {
+	font-family: 'MyWebFont', Helvetica, sans-serif;
+	font-size: 0.9em;
+	font-weight: 300;
+	color: #7f7f7f;
+	display: inline-block;
+	width: 50%;
+	height: 30px;
+	margin-bottom: 8px;
+	padding-left: 10px;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+#formBody .budgetForm #budgetTargetBody select {
+	font-family: 'MyWebFont', Helvetica, sans-serif;
+	font-size: 0.9em;
+	font-weight: 300;
+	color: #7f7f7f;
+	display: inline-block;
+	width: 50%;
+	height: 30px;
+	margin-bottom: 8px;
+	padding-left: 17px;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
